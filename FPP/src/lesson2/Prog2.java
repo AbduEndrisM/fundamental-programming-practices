@@ -9,7 +9,7 @@ public class Prog2 {
 		float y=3.881f;
 		float z=9.6f;
 		
-		//System.out.println(x+y+z);
+		System.out.println(x+y+z);
 		
 		// Question 1 cast 
 		int sum1=(int) (x+y+z);

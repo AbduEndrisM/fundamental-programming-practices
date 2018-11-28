@@ -11,12 +11,12 @@ public class Prog4 {
 		System.out.println("Enter string");
 		String hello = sc.nextLine();
 		
-		
+			
 		for (int i=hello.length()-1;i>=0;i--)
 		{
 			
 			System.out.print(hello.charAt(i));
-		}
+		} 
 		
 	}
 

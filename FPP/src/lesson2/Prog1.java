@@ -15,7 +15,7 @@ public class Prog1 {
 		System.out.println(x);
 		
 	
-		
+			
 		
 		//Question 2	3-14
 		int b =r.nextInt(14-3+1)+3; // r.nextInt(max - min + 1) + min

@@ -51,7 +51,7 @@ public class Prog5 {
 		for(int i=0; i<4; i++) {
 		
 		System.out.print("   ___ ");
-		}
+		} 
 		
 		
 										System.out.println("\n\n");

@@ -7,9 +7,9 @@ public class Prog2 {
 
 		float x=1.27f;
 		float y=3.881f;
-		float z=9.6f;
+		float z=9.6f;	
 		
-		System.out.println(x+y+z);
+		System.out.println(x+y+z);	
 		
 			
 		// Question 1 cast 
@@ -20,6 +20,7 @@ public class Prog2 {
 		//Question 2 rounding
 		int sum2= Math.round(x+y+z);
 		System.out.println(sum2);
+		
 		
 	}
  

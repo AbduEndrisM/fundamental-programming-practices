@@ -9,8 +9,8 @@ public class Prog4 {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter string");
-		
 		String hello = sc.nextLine();
+		
 		
 		for (int i=hello.length()-1;i>=0;i--)
 		{

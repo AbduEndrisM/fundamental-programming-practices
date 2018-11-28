@@ -23,7 +23,7 @@ public class Prog8 {
 					small = a[i];
 		  }
 			
-		}
+		} 
 		
 		System.out.println(small);
 		

@@ -5,6 +5,7 @@ public class Prog3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		
 	String records =	"231A,Light Bulb,123,Wilco,1.75:"+
 						"113D,Hairbrush,19,Aamco,3.75:"+
 						"521W,Shampoo,24,Acme,6.95:"+

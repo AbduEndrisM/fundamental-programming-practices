@@ -8,7 +8,7 @@ public class Prog5 {
 		// TODO Auto-generated method stub
 
 
-		int [][]a = new int [6][4]; 
+		int [][]a = new int [4][4]; 
 		Random  r = new Random();
 		
 		for(int i=0; i<4; i++) {
@@ -48,8 +48,10 @@ public class Prog5 {
 			
 		}
 		
-		System.out.print("  ___\t____\t ____\t____ ");
+		for(int i=0; i<4; i++) {
 		
+		System.out.print("   ___ ");
+		}
 		
 		
 										System.out.println("\n\n");

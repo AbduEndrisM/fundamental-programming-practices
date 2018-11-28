@@ -11,6 +11,7 @@ public class Prog2 {
 		
 		System.out.println(x+y+z);
 		
+		
 		// Question 1 cast 
 		int sum1=(int) (x+y+z);
 		System.out.println(sum1);

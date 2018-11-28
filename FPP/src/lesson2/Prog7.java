@@ -14,7 +14,7 @@ public class Prog7 {
 		
 		for (int i=0; i<string.length;i++) {
 		string[i]= sc.nextLine();
-		}
+		} 
 		
 		int count=0;
 		

@@ -14,7 +14,7 @@ public class Prog1 {
 		double x= Math.pow(Math.PI, a);
 		System.out.println(x);
 		
-	
+		
 			
 		
 		//Question 2	3-14

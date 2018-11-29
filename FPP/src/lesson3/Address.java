@@ -1,4 +1,4 @@
-package Lesson3;
+package lesson3;
 
 //Address, Customer, Main classes are for a single problem
 public class Address {

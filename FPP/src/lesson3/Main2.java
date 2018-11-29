@@ -1,4 +1,4 @@
-package Lesson3;
+package lesson3;
 
 import java.util.Scanner;
 
@@ -6,9 +6,7 @@ public class Main2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Triangle t = new Triangle(3.0, 4.5);
-		Rectangle r = new Rectangle(3.0, 4.5);
-		
+	
 		Scanner sc = new Scanner(System.in);
 		
 		char choice;
@@ -21,20 +19,37 @@ public class Main2 {
 		switch (choice) {
 
 		case 'C':
-			System.out.println("Enter the width");
-			 
-			Circle c = new Circle(3.0);
-			System.out.println(c.computeArea());
+		
+			System.out.println("Enter the radius");
+			double radius= sc.nextDouble();
+			
+			Circle c = new Circle(radius);
+			System.out.println("The area of Rectangle is : "+c.computeArea());
+			
 			break;
-
+		
 		case 'R':
+			
+			System.out.println("Enter the length");
+			double length= sc.nextDouble();
 			System.out.println("Enter the width");
-			System.out.println(r.computeArea());
+			double width= sc.nextDouble();
+			
+			Rectangle r = new Rectangle(length, width);
+			System.out.println("The area of Rectangle is : "+r.computeArea());
+			
 			break;
 
 		case 'T':
-			System.out.println("Enter the width");
-			System.out.println(t.computeArea());
+			
+			System.out.println("Enter the base");
+			double base= sc.nextDouble();
+			System.out.println("Enter the height");
+			double height= sc.nextDouble();
+			
+			Triangle t = new Triangle(base, height);
+			System.out.println("The area of Rectangle is : "+t.computeArea());
+			
 			break;
 
 		default:

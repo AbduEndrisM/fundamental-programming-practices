@@ -1,8 +1,10 @@
-package lesson3;
+
+
+package lesson3.problem4;
 
 public final class Circle {
 
-	 final private double r;
+	  private double r;
 
 	public Circle(double r) {
 		this.r = r;

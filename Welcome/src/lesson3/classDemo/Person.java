@@ -1,4 +1,4 @@
-package lesson3;
+package lesson3.classDemo;
 
 public class Person { // Declare class - public / default modifier
 	 
@@ -34,12 +34,13 @@ public class Person { // Declare class - public / default modifier
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+	
 	Person(String name, String gender){
 		 this.name  = name;
 		 this.gender = gender;
 		 		 
 	 }
-	// Delarere the behaviour
+	// Declare the behavior
 	 void display(){
 		 System.out.println("Name : " + name + "\n Gender :" + gender);
 		 System.out.println(cont.getEmail() + " " + cont.getMobile());

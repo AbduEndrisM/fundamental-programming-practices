@@ -11,8 +11,7 @@ public class Employee {
 	private Date hireDay;
 
 	// constructor
-	Employee(String name, String aNickName, double aSalary, int aYear,
-			int aMonth, int aDay) {
+	Employee(String name, String aNickName, double aSalary, int aYear, int aMonth, int aDay) {
 		this.name = name;
 		nickName = aNickName;
 		salary = aSalary;
@@ -46,5 +45,7 @@ public class Employee {
 	public String toString() {
 		return String.format(format, name, salary, Util.dateAsString(hireDay));
 	}
+
+	 
 }
 

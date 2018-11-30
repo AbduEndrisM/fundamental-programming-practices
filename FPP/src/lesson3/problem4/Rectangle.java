@@ -1,7 +1,9 @@
-package lesson3;
 
+
+package lesson3.problem4;
 public final class Rectangle {
-	private final double l,w;
+	private  double l;
+	private double w;
 
 	public Rectangle(double l, double w) {
 		this.l = l;

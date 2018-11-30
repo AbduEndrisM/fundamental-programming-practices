@@ -3,11 +3,7 @@
 package lesson3.problem2;
 
  
-//An Enum class 
-enum AccountType 
-{ 
-	CHECKING, SAVINGS, RETIREMENT;
-} 
+
 
 class Account {
 	//public final static String CHECKING = "checking";
@@ -18,16 +14,16 @@ class Account {
 	
 	private double balance;
 	
-	private String acctType;
+	private AccountT acctType;
 	private Employee employee;
 
-	Account(Employee emp, String acctType, double balance) {
+	Account(Employee emp, AccountT acctType, double balance) {
 		employee = emp;
 		this.acctType = acctType;
 		this.balance = balance;
 	}
 
-	Account(Employee emp, String acctType) {
+	Account(Employee emp, AccountT acctType) {
 		this(emp, acctType, DEFAULT_BALANCE);
 	}
 
@@ -37,10 +33,16 @@ class Account {
 
 	public void makeDeposit(double deposit) {
 		// implement
+		balance= balance+deposit;
+		
 	}
 
 	public boolean makeWithdrawal(double amount) {
 		// implement
+		if(balance>=amount) {
+			balance=balance-amount;
+			return true;
+		}
 		
 		return false;
 	}

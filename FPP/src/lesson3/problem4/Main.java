@@ -1,8 +1,10 @@
-package lesson3;
+ 
+
+package lesson3.problem4;
 
 import java.util.Scanner;
 
-public class Main2 {
+public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

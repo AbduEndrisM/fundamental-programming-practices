@@ -1,4 +1,4 @@
-package lesson3;
+package lesson3.classDemo;
 
 public class Contact {
 	String email;

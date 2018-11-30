@@ -1,8 +1,11 @@
-package lesson3;
+
+
+package lesson3.problem4;
 
 public final class Triangle {
 
-	 private final double b,h;
+	 private  double b;
+	 private double h;
 
 	public Triangle(double b, double h) {
 		this.b = b;

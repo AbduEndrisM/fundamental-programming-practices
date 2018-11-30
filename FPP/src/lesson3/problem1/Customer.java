@@ -15,6 +15,8 @@ public class Customer {
 		this.lastName = lastName;
 		this.SSN = SSN;
 	}
+	
+	
 
 	public String getfirstName() {
 		return firstName;
@@ -67,7 +69,7 @@ public class Customer {
 		return "[" + firstName + ", " + lastName + ", " + "ssn: " + SSN +"]" ;
 		 
 		 }
- 	
+	
 	
 
 }

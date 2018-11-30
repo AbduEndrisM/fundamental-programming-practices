@@ -2,15 +2,23 @@
 
 package lesson3.problem2;
 
+ 
+//An Enum class 
+enum AccountType 
+{ 
+	CHECKING, SAVINGS, RETIREMENT;
+} 
+
 class Account {
 	//public final static String CHECKING = "checking";
 	//public final static String SAVINGS = "savings";
 	//public final static String RETIREMENT = "retirement";
-	//private final static double DEFAULT_BALANCE = 0.0;
+	
+	private final static double DEFAULT_BALANCE = 0.0;
 	
 	private double balance;
-	private String acctType;
 	
+	private String acctType;
 	private Employee employee;
 
 	Account(Employee emp, String acctType, double balance) {
@@ -33,6 +41,7 @@ class Account {
 
 	public boolean makeWithdrawal(double amount) {
 		// implement
+		
 		return false;
 	}
 }

@@ -35,6 +35,8 @@ public class Customer {
 	public Address getShippingAddress() {
 		return shippingAddress;
 	}
+	
+	
 
 	public void setfirstName(String firstName) {
 		this.firstName=firstName;
@@ -57,6 +59,7 @@ public class Customer {
 	}
 
 	
+	 
 	//String bill= billingAddress.getStreet() + " " + billingAddress.getCity()+ " " + billingAddress.getZip()+" "+ billingAddress.getState();
 	//String ship= shippingAddress.getStreet() + " " + shippingAddress.getCity()+ " " + shippingAddress.getZip()+" "+ shippingAddress.getState();
 	

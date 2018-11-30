@@ -1,5 +1,6 @@
 package lesson3.problem1;
 
+
 public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,21 +17,40 @@ public class Main {
 		Address c3ShippingAdd= new Address("Atlanta", "Georgia", "5th", "12345"); 
 		
 		
-		  c1.setBillingAddress(c1BillingAdd);		
-		  c1.setShippingAddress(c1ShippingAdd);
+		//  c1.setBillingAddress(c1BillingAdd);		
+		//  c1.setShippingAddress(c1ShippingAdd);
 			
-		  c2.setBillingAddress(c2BillingAdd);		
-		  c2.setShippingAddress(c2ShippingAdd);
+		//  c2.setBillingAddress(c2BillingAdd);		
+		//  c2.setShippingAddress(c2ShippingAdd);
 			
-		  c3.setBillingAddress(c3BillingAdd);		
-		  c3.setShippingAddress(c3ShippingAdd);
-		  Customer [] x= new Customer [3];
+		//  c3.setBillingAddress(c3BillingAdd);		
+		 // c3.setShippingAddress(c3ShippingAdd);
+		   
+		  Customer [] cust= new Customer [3];
+		  cust[0]=c1;
+		  cust[1]=c2;
+		  cust[2]=c3;
 		  
-		  x[0]=c1;
-		  x[1]=c2;
-		  x[2]=c3;
 		  
-		  for()
+		// Creation of Array of objects - way 2
+			 
+		  Customer [] custom= new Customer [3];
+		  	custom[0].setBillingAddress(c1BillingAdd); 
+			custom[0].setShippingAddress(c1ShippingAdd);
+			
+			custom[1].setBillingAddress(c2BillingAdd); 
+			custom[1].setShippingAddress(c2ShippingAdd);
+			
+			custom[2].setBillingAddress(c3BillingAdd); 
+			custom[2].setShippingAddress(c3ShippingAdd);
+			
+			 
+			
+			
+			for(Customer c : custom){
+				if (c.getBillingAddress().getCity().equals("chicago"))
+				c.toString();
 		
 	}
+}
 }

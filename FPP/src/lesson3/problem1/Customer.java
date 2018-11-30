@@ -1,4 +1,4 @@
-package lesson3;
+package lesson3.problem1;
 
 public class Customer {
 
@@ -10,10 +10,10 @@ public class Customer {
 	private Address shippingAddress;
 	
 	
-	public Customer(String x, String y, String z) {
-		firstName = x;
-		lastName = y;
-		SSN = z;
+	public Customer(String firstName, String lastName, String SSN) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.SSN = SSN;
 	}
 
 	public String getfirstName() {
@@ -57,11 +57,11 @@ public class Customer {
 	}
 
 	
-	String bill= billingAddress.getStreet() + " " + billingAddress.getCity()+ " " + billingAddress.getZip()+" "+ billingAddress.getState();
-	String ship= shippingAddress.getStreet() + " " + shippingAddress.getCity()+ " " + shippingAddress.getZip()+" "+ shippingAddress.getState();
+	//String bill= billingAddress.getStreet() + " " + billingAddress.getCity()+ " " + billingAddress.getZip()+" "+ billingAddress.getState();
+	//String ship= shippingAddress.getStreet() + " " + shippingAddress.getCity()+ " " + shippingAddress.getZip()+" "+ shippingAddress.getState();
 	
 	public String toString() {
-		return "[" + firstName + ", " + lastName + ", " + "ssn: " + SSN + "," +  bill+ ","+ship  +"]" ;
+		return "[" + firstName + ", " + lastName + ", " + "ssn: " + SSN +"]" ;
 		 
 		 }
  	

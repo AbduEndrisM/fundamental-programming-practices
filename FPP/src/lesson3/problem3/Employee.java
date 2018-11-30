@@ -1,5 +1,6 @@
 package lesson3.problem3;
  
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -22,6 +23,7 @@ public class Employee {
 	
 	public void createNewChecking(double startAmount) {
 		// implement
+		checkingAcct=new Account (this, acctType, CHECKING,3000)
 		
 	}
 
@@ -41,6 +43,12 @@ public class Employee {
 	}
 	public void deposit(String acctType, double amt){
 		// implement
+		switch (acct) {
+		case CHECKING:
+			checkingAcct.deposit
+		}
+		
+		
 	}
 	public boolean withdraw(String acctType, double amt){
 		// implement

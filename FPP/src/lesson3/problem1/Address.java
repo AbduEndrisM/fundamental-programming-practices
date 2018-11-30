@@ -1,4 +1,4 @@
-package lesson3;
+package lesson3.problem1;
 
 //Address, Customer, Main classes are for a single problem
 public class Address {
@@ -8,6 +8,13 @@ public class Address {
 	private String state;
 	private String zip;
 
+	Address(String street, String city, String state, String zip) {
+		this.street = street;
+		this.city = city;
+		this.state = state;
+		this.zip = zip;
+	}
+	
 	public void setStreet(String street) {
 		this.street = street;
 	}
@@ -40,11 +47,6 @@ public class Address {
 		return zip;
 	}
 
-	Address(String street, String city, String state, String zip) {
-		this.street = street;
-		this.city = city;
-		this.state = state;
-		this.zip = zip;
-	}
+	
 
 }

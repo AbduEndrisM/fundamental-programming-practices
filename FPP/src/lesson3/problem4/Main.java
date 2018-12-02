@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws java.io.IOException{
 		// TODO Auto-generated method stub
 	
 		Scanner sc = new Scanner(System.in);
@@ -16,8 +16,10 @@ public class Main {
 		System.out.println("Enter C for Circle");
 		System.out.println("Enter R for Rectangle");
 		System.out.println("Enter T for Triangle");
-		choice = sc.next().charAt(0);
-
+		//choice = sc.next().charAt(0);
+		choice=(char) System.in.read();
+		//ch = (char) System.in.read(); // get a char
+		
 		switch (choice) {
 
 		case 'C':

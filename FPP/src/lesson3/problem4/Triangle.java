@@ -1,24 +1,25 @@
 
-
 package lesson3.problem4;
 
 public final class Triangle {
 
-	 private  double b;
-	 private double h;
+	private final double b;
+	private final double h;
 
 	public Triangle(double b, double h) {
 		this.b = b;
-		this.h=h;
+		this.h = h;
 	}
 
 	public double getBase() {
 		return b;
-	}public double getHeight() {
+	}
+
+	public double getHeight() {
 		return h;
 	}
 
 	public double computeArea() {
-		return (0.5*(b * h));
+		return (0.5 * (b * h));
 	}
 }

@@ -2,7 +2,7 @@
 
 package lesson3.problem4;
 public final class Rectangle {
-	private  double l;
+	private  final double l;
 	private double w;
 
 	public Rectangle(double l, double w) {

@@ -15,16 +15,16 @@ public class Main {
 		Address c2ShippingAdd = new Address("Fairfield", "IA", "4th", "52556");
 		Address c3ShippingAdd = new Address("Atlanta", "Georgia", "5th", "12345");
 
+		Customer[] cust = { c1, c2, c3 };
+
 		c1.setBillingAddress(c1BillingAdd);
 		c1.setShippingAddress(c1ShippingAdd);
-
+		
 		c2.setBillingAddress(c2BillingAdd);
 		c2.setShippingAddress(c2ShippingAdd);
 
 		c3.setBillingAddress(c3BillingAdd);
 		c3.setShippingAddress(c3ShippingAdd);
-
-		Customer[] cust = { c1, c2, c3 };
 
 		for (Customer c : cust) {
 			if (c.getBillingAddress().getCity() == "Chicago")

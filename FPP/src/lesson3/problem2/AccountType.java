@@ -1,6 +1,6 @@
 package lesson3.problem2;
 
-public enum AccountT {
+public enum AccountType {
 	
 		CHECKING, SAVINGS, RETIREMENT;
 	 

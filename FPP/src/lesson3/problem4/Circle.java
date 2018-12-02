@@ -4,7 +4,7 @@ package lesson3.problem4;
 
 public final class Circle {
 
-	  private double r;
+	  private final double r;
 
 	public Circle(double r) {
 		this.r = r;

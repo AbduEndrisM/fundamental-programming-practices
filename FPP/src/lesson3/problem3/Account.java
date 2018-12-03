@@ -1,19 +1,15 @@
 
+package lesson3.problem3;
 
-package lesson3.problem2;
+public class Account {
+	// public final static String CHECKING = "checking";
+	// public final static String SAVINGS = "savings";
+	// public final static String RETIREMENT = "retirement";
 
- 
-
-
-class Account {
-	//public final static String CHECKING = "checking";
-	//public final static String SAVINGS = "savings";
-	//public final static String RETIREMENT = "retirement";
-	
 	private final static double DEFAULT_BALANCE = 0.0;
-	
+
 	private double balance;
-	
+
 	private AccountType acctType;
 	private Employee employee;
 
@@ -23,7 +19,7 @@ class Account {
 		this.balance = balance;
 	}
 
-	Account(Employee emp, AccountType acctType) { 
+	Account(Employee emp, AccountType acctType) {
 		this(emp, acctType, DEFAULT_BALANCE);
 	}
 
@@ -33,17 +29,17 @@ class Account {
 
 	public void makeDeposit(double deposit) {
 		// implement
-		balance= balance+deposit;
-		
+		balance = balance + deposit;
+
 	}
 
 	public boolean makeWithdrawal(double amount) {
 		// implement
-		if(balance>=amount) {
-			balance=balance-amount;
+		if (balance >= amount) {
+			balance = balance - amount;
 			return true;
 		}
-		
+
 		return false;
 	}
 }

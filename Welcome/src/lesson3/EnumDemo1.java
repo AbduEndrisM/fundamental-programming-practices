@@ -13,9 +13,11 @@ public class EnumDemo1 {
 		String userEntry;
 		int position;
 		boolean comparison = false;
+		
 		Scanner input = new Scanner(System.in);
 		System.out.print("\nEnter the first three letters of " + "your birth month >>");
 		userEntry = input.nextLine().toUpperCase();
+		
 		// values() returns an array containing all of the values
 		// of the enum in the order they are declared
 		for (Month mon : Month.values()) {

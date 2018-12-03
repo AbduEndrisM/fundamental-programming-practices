@@ -15,6 +15,8 @@ public class PersonTest {
 		//p2.display();
 		// System.out.println(p2.getName() + ", " + p2.getGender());
 		
+		Person p3 =new Person("Ali","Male");
+		//	 Person p3 = new Person("Ali","Male");
 		
 		
 		// Creation of Array of objects - way 1
@@ -22,7 +24,7 @@ public class PersonTest {
 		persons[0] = p1;
 		persons[1] = p2;
 		persons[2] = new Person("Semir","Female");
-		 Person p3 = new Person("Ali","Male");
+		
 		
 		// Creation of Array of objects - way 2
 		Person[] persons1 = { p1, p2,p3};

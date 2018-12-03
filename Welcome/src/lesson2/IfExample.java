@@ -3,7 +3,7 @@ package lesson2;
 
 public class IfExample {
 	
-	public static void main(String args[]) throws java.io.IOException {
+	public static void main(String args[]) throws java.io.IOException { // exception is for char char = System.in.read
 		char ch, answer = 'K';
 		System.out.println("I'm thinking of a letter between A and Z.");
 		System.out.print("Can you guess it: ");

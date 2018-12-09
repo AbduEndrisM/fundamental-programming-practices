@@ -1,7 +1,7 @@
 package lesson3;
 
 enum Currency {
-	US, INDIA, UK
+	US, INDIA, UK, Ethio
 }
 
 class sample1 {
@@ -16,6 +16,11 @@ class sample1 {
 		case UK:
 			System.out.println("Pounds");
 			break;
+		
+		case Ethio:
+			System.out.println("Birr");
+			break;
+			
 		default:
 			System.out.println("Wrong Input");
 			break;
@@ -31,6 +36,7 @@ public class EnumDemo {
 		sample1 s = new sample1();
 		s.display(Currency.INDIA);
 		s.display(Currency.US);
+		s.display(Currency.Ethio);
 		String x = "UK";
 		Currency input = Currency.valueOf(x); // Converting String Input into Enum Type
 		s.display(input);

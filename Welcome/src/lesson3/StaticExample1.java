@@ -13,7 +13,7 @@ public class StaticExample1 {
 		return count;
 	}
 
-	public void display() {
+	public  void display() {
 		System.out.println("m = " + m);
 		System.out.println("Count = " + count);
 	}

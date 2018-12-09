@@ -8,7 +8,8 @@ public class Main {
 		Computer c2 = new Computer("ASUS", "intel", 4, 2.5);
 	
 		System.out.println(c1.equals(c2));
-		
+	
+		System.out.println(c1==c2);		
 	}
 
 }

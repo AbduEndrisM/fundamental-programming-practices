@@ -1,5 +1,6 @@
 package lesson5.problem5;
- 
+
+import java.util.Objects;
 
 public class Computer {
 
@@ -28,6 +29,8 @@ public class Computer {
 		return ramSize*processorSpeed;
 	}
 	
+	
+	
  
 	
 	@Override
@@ -40,10 +43,11 @@ public class Computer {
 		 if(obj == null)
 			 return false;
 		 // do they belongs to the same class?
-		 if (this.getClass() != obj.getClass()) // if(!obj instanceOf Computer)
+		  if(!(obj instanceof Computer))//if (this.getClass() != obj.getClass()) //
 			 return false;
 		 // get the reference of obj in a laptop variable type
 		Computer comp = (Computer) obj;
+		
 		//Do they have same name and same color
 		if(comp.manufacturer.equals(this.manufacturer) && comp.processor.equals(this.processor) && (comp.ramSize == this.ramSize)&& (comp.processorSpeed == this.processorSpeed))
 			return true;
@@ -56,15 +60,16 @@ public class Computer {
 	{
 		int hash = 5;
 		// User defined formula 
-		hash = 37 * hash + manufacturer.hashCode() * processor.hashCode();
-		
+		hash = 37 * hash + manufacturer.hashCode() * processor.hashCode() * ((Integer) ramSize).hashCode() * ((Double)processorSpeed).hashCode();
 		return hash;
+		
+	//	return Objects.hash(manufacturer,processor, ramSize,processorSpeed )
 	}
 	
 	@Override
 	public String toString()
 	{
-	String info = "Manufacturer = " + manufacturer + " Ram size = " + ramSize; 
+	String info = "Manufacturer = " + this.manufacturer + " Ram size = " + this.ramSize + " Processoe = " + this.processor + " Speed = " + this.processorSpeed ; 
 	return info;
 	}
 	

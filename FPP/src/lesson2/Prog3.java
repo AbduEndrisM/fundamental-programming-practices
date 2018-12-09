@@ -36,6 +36,10 @@ public class Prog3 {
 		for (int i=0; i<rows.length;i++)
 		
 		System.out.println(rows[i].split(",")[0]); //String first = s.split(",")[0];
+	
+	
+	
+		
 	}
 
 }

@@ -1,4 +1,4 @@
-package lesson7;
+package lesson6;
 
 //Blue outer class & Black inner class
 public class MyClass {

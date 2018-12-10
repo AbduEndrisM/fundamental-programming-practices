@@ -1,4 +1,4 @@
-package lesson7;
+package lesson6;
 
 public class ShadowTest {
 	public int x = 0;

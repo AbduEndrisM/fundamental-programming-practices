@@ -1,4 +1,4 @@
-package swing1;
+package lesson7.swing1;
 
 import javax.swing.*;
 

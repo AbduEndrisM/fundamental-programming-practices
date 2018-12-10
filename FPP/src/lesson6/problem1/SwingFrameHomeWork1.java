@@ -96,19 +96,21 @@ public class SwingFrameHomeWork1 {
 		// TODO Auto-generated method stub
 		JFrame frame = new JFrame("String Utility");
 
+	
+		frame.setSize(400, 200);
+		placeComponents(frame);
+
+		frame.setResizable(false);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
 		Toolkit tk = Toolkit.getDefaultToolkit();
 		Dimension dm = tk.getScreenSize();
 		int xPos = (dm.width / 2) - (frame.getSize().width / 2);
 		int yPos = (dm.height / 2) - (frame.getSize().height / 2);
 		frame.setLocation(xPos, yPos);
 
-		frame.setSize(400, 200);
-		placeComponents(frame);
-
-		frame.setResizable(false);
-		frame.setVisible(true);
-
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	}
 

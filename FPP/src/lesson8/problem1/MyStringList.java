@@ -1,9 +1,5 @@
 package lesson8.problem1;
 
-import java.util.Comparator;
-
-import lesson8.problem2.MinSort;
-
 public class MyStringList {
 	private final int INITIAL_LENGTH = 4;
 	private String[] strArray;
@@ -26,15 +22,10 @@ public class MyStringList {
 		}
 		return strArray[i];
 	}
-
-	public boolean find(String s) {
-		for (String test : strArray) {
-			if (test.equals(s))
-				return true;
-		}
-		return false;
-	}
-
+	/*
+	 * public boolean find(String s) { for (String test : strArray) { if
+	 * (test.equals(s)) return true; } return false; }
+	 */
 	/*
 	 * public void insert(String s, int pos){ if(pos > size) return; if(pos >=
 	 * strArray.length||size+1 > strArray.length) { resize(); } String[] temp = new
@@ -135,6 +126,20 @@ public class MyStringList {
 
 	}
 
+	public boolean search(String x1) {
+
+		for (int i = 0; i < size; i++)
+			if (strArray[i].equals(x1))
+				return true;
+
+		/*
+		 * for(String test : strArray){ if(test.equals(x1)) return true; }
+		 */
+
+		return false;
+
+	}
+
 	public static void main(String[] args) {
 		MyStringList l = new MyStringList();
 
@@ -171,6 +176,14 @@ public class MyStringList {
 		System.out.println("After sorting :");
 		l.minSort();
 		System.out.println(l);
+
+		// search
+
+		boolean x1 = l.search("number");
+		boolean x2 = l.search("tall");
+		System.out.println("Search for 'number' - " + x1);
+		System.out.println("Search for 'tall' - " + x2);
+
 	}
 
 }

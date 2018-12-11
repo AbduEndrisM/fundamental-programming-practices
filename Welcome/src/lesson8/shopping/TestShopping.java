@@ -21,6 +21,7 @@ public class TestShopping {
 		list.add(new Shopping("df5S", 400.0));
 		
 		
+		
 		// Whenever equals and comparator 
 		Shopping s1= new Shopping ("Galaxy", 40.3);
 		Shopping s2= new Shopping ("Galaxy", 50.3);
@@ -29,18 +30,18 @@ public class TestShopping {
 		//Check both using equals
 		boolean res1= s1.equals(s2); //false
 		
-		// --Inconsistent = True and Flase
+		// --Inconsistent = True and False [equals and compare to]
 		
 		//check both using compare class
 		SortByName sb = new SortByName();
 		int res2 = sb.compare(s1, s2);
 		
 		
-		System.out.println(res1);
-		System.out.println(res2);
+		System.out.println("equals - "+res1);
+		System.out.println("compare - "+res2);
 		
 		
-		// Compare after consistency
+		// Compare after consistency ?????
 		System.out.println(res1+ "\n"+res2);
 		
 		

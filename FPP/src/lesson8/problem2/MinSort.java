@@ -36,9 +36,9 @@ public class MinSort {
 	}
 	public static void main(String[] args){
 		int[] test = {21,13,1,-22, 51, 5, 18};
-		SelSort ss = new SelSort(test);
+		MinSort ss = new MinSort(test);
 		ss.sort();
-		System.out.println(Arrays.toString(ss.arr));
+		//System.out.println(arr.toString(ss.arr));
 		
 	}
 }

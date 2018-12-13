@@ -1,4 +1,4 @@
-package lesson9;
+package lesson8;
 
 import java.util.Iterator;
 

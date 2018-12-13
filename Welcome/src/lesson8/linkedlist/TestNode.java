@@ -1,4 +1,4 @@
-package lesson9.linkedlist;
+package lesson8.linkedlist;
 
 public class TestNode {
 

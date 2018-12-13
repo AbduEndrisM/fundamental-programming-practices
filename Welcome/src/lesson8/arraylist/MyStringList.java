@@ -1,10 +1,16 @@
-package lesson8.list;
+package lesson8.arraylist;
  
 
 public class MyStringList {
+	
+	
+	
 	private final int INITIAL_LENGTH = 4;
+	
 	private String[] strArray; 
 	private int size;
+	
+	
 	
 	public MyStringList() {
 		strArray = new String[INITIAL_LENGTH];

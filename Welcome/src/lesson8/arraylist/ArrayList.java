@@ -1,4 +1,4 @@
-package lesson8.list;
+package lesson8.arraylist;
 
 public class ArrayList {
 

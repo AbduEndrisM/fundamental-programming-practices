@@ -22,8 +22,8 @@ public class ArrayQueueImpl {
 	}
 
 	public int size() {
-		int x = real - front + 1;
-		return x;
+		//int x = real - front + 1;
+		return real-front+1; //x
 	}
 
 	public void reSize() {

@@ -1,4 +1,4 @@
-package lesson8.problem2;
+package lesson8_1.problem2;
 
 class Search {
 	Person[] anArray;

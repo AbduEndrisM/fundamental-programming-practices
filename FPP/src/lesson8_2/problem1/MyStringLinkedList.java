@@ -1,4 +1,4 @@
-package lesson9.problem1;
+package lesson8_2.problem1;
 
 public class MyStringLinkedList {
 	Node header;
@@ -8,44 +8,72 @@ public class MyStringLinkedList {
 		header = null;
 
 	}
-
+	
+	// insert in a Sorted Order
 	public void addSort(String item) {
-		// Implement
-		if (header == null) {
-			header = new Node (null,item,null);
+		Node temp=null;
+		if(header ==null) {
+			header=new Node(null,item,null);	
 		}
-		else if (header.next==null && header.previous==null) {
-			if (header.value.compareTo(item)>0) {
-				Node x = new Node(null, item, header);
-				header.previous=x;
-				
-				header.next=null;
-
+		else if (header.next==null&& header.previous==null)
+		{   
+			temp=new Node(null,item,null);
+			if(header.value.compareToIgnoreCase(item)>0)
+			{				
+				temp.next=header;
+				header.previous=temp;
+				header=temp;  
+				temp=null;				
 			}
-			else {
-				Node x = new Node(header, item, null);
-			header.next=x;
-			}
-
+			else
+			{
+				temp.previous=header;				
+				header.next=temp;
+				temp=null;
+			}			
 		}
-		else {
-			Node temp = header;
-
-			while (temp!=null) {
-				if (temp.value.compareTo(item) > 0) {
-
-					Node x = new Node(temp.previous, item, temp);
-
-					temp.previous = x;
-					temp.previous.next = x;
-				}
-				temp = temp.next;
-
+		else 
+		{
+			// last case
+			Node temp2=new Node(null,item,null);
+			Node temp1=getPosition(header, item);
+		
+			if(temp1.next!=null) {			
+			temp2.previous=temp1.previous;
+			temp2.next=temp1;			
+		    temp1.previous.next=temp2;
+			temp1.previous=temp2;
+			}
+			else
+			{
+				temp2.previous=temp1;
+				temp2.next=null;
+				temp1.next=temp2;
+						
 			}
 			
+			
+			
+			
+			
 		}
-
-	} // insert in a Sorted Order
+	} 
+	
+	
+	Node getPosition(Node header,String item)
+	{
+		Node temp=header;
+		while(temp!=null)
+		{
+			if(temp.value.compareToIgnoreCase(item)>0) {
+				return temp;
+			}
+			temp=temp.next;
+		}
+		
+		temp=getLast();
+		return temp;
+	}
 
 	public int size() {
 		// Implement
@@ -205,7 +233,7 @@ public class MyStringLinkedList {
 		System.out.println("First" + mySL.getFirst().value);
 		System.out.println("Last"+ mySL.getLast().value);
 		System.out.println("Is empty "+mySL.isEmpty());
-		System.out.println("Elias is found "+mySL.contains("ELias"));
+		System.out.println("Elias is found "+mySL.contains("Elias"));
 		System.out.println("Size "+mySL.size());
 
 	}

@@ -1,4 +1,4 @@
-package lesson8.problem2;
+package lesson8_1.problem2;
 
 public class MinSort {
 	Person[] arr;

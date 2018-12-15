@@ -78,6 +78,7 @@ class ArrayStack implements Stack1 {
 public class StackDoublyLinkedList {
 	public static void main(String[] args) {
 		ArrayStack stk = new ArrayStack(); // create stack of size 4
+		 
 		Object item;
 		stk.push(1); // push 3 items onto stack
 		stk.push(2);

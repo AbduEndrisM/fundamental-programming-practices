@@ -19,7 +19,7 @@ public static void main(String[] args) {
 	
 	byte q=5;
 	byte w=4;
-	byte e =  q+w;
+	byte e =  (byte) (q+w);
 	StringBuilder y = new StringBuilder("Java");
 	
 	/*

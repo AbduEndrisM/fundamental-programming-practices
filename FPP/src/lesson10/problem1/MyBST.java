@@ -1,19 +1,16 @@
 package lesson10.problem1;
 
-import java.util.Iterator;
-import java.util.TreeMap;
-import java.util.TreeSet;
-
-// Demo code for the user implemenation of Binary search tree
+// code for the user implemenation of Binary search tree
 public class MyBST {
 	/** The tree root. */
 	private BinaryNode root;
-	private int numberOfLeafs=0;
-	private int size=0;
+	private int numberOfLeafs = 0;
+	private int size = 0;
+
 	public MyBST() {
 		root = null;
-		numberOfLeafs=0;
-		size=0;
+		numberOfLeafs = 0;
+		size = 0;
 	}
 
 	/**
@@ -81,107 +78,128 @@ public class MyBST {
 
 		}
 	}
-	public void preOrder(){
+
+	public void preOrder() {
 		preOrder(root);
-		}
-	
-	 
-	private void preOrder(BinaryNode t) {// implement  VIew - Left - Right
+	}
+
+	private void preOrder(BinaryNode t) {// implement VIew - Left - Right
 
 		if (t != null) {
-			System.out.println(t.element);
+			System.out.print(t.element + ",");
 			preOrder(t.left);
 			preOrder(t.right);
 		}
 	}
+
 	public void postOrder() {
 		postOrder(root);
 	}
+
 	private void postOrder(BinaryNode t) {// implement Left-View-Right
 
 		if (t != null) {
 			preOrder(t.left);
 			preOrder(t.right);
-			System.out.println(t.element);
+			System.out.print(t.element + ",");
 		}
 	}
-	
-	
-	public boolean contains(Integer key){
-		
-		if (root==null) {
+
+	/*
+	 * public boolean contains(int key) {
+	 * 
+	 * if (root == null) return false;
+	 * 
+	 * else if (root.element == key) return true; else { if (key > root.element)
+	 * contains(root.left, key);
+	 * 
+	 * else contains(root.right, key);
+	 * 
+	 * return false; // implement }
+	 * 
+	 * } }
+	 */
+
+	public boolean contains(int key) {
+
+		if (root == null)
 			return false;
-		}
-		else if (root.element==key)
+
+		return contains(root, key);
+
+	}
+
+	public boolean contains(BinaryNode root, int key) {
+
+		if (root == null)
+			return false;
+
+		if (root.element == key)
 			return true;
-		else
-		{	
-			if (key>root.element)
-				contains (root.left, key);
-		
-		else
-			contains (root.right, key);
-		
-			
-		return false; //implement }
-	
+		if (root.element > key)
+			return contains(root.left, key);
+
+		return contains(root.right, key);
+
 	}
+
+	public boolean isEmpty() {// implement // check the tree is empty or not
+
+		return (root == null);
 	}
-	
+
+	public Integer findMin() {
+		return findMin(root);
+	}
+
+	private Integer findMin(BinaryNode x) {
+		// TODO Auto-generated method stub
+		if (x.left == null)
+			return x.element;
+		return (findMin(x.left));
+
+		// return x.element;
+
+	}
+
 	public Integer findMax() {
 		return findMax(root);
 	}
 
-
 	private Integer findMax(BinaryNode x) {
 		// TODO Auto-generated method stub
-		if (x.right==null)
-			return root.element;//x.element;
-		findMax(x.right);
-		
-		return x.element;
+		if (x.right == null)
+			return x.element;
+		return findMax(x.right);
+
 	}
 
-	private boolean contains(BinaryNode x, int key) {
-		// TODO Auto-generated method stub
-		boolean result = false;
-		while(x!=null) {
-			if (x.element!=key) {
-				contains(x.left,key);
-			}
-			else {
-			result = true;	
-			}
-		}
-		return result;
-		
-	}
-	
-	
-	public Integer getRoot(){//implement 
-		
+	/*
+	 * private boolean contains(BinaryNode x, int key) { // TODO Auto-generated
+	 * method stub boolean result = false; while (x != null) { if (x.element != key)
+	 * { contains(x.left, key); } else { result = true; } } return result;
+	 * 
+	 * }
+	 */
+	public Integer getRoot() {// implement
+
 		return root.element;
 	}
-	
-	public Integer leafNodes(){
-		if (root==null)
-			return 0;
-		else if (root.left==null && root.right==null)
-			return 1;
-		
-		return leafNodes(root);
-		} 
 
-//xxxxxxxxxxxxxxxxxx
+	public Integer leafNodes() {
+
+		return leafNodes(root);
+	}
 
 	private int leafNodes(BinaryNode x) {
 		// TODO Auto-generated method stub
-		
-		return numberOfLeafs;
+		if (x == null)
+			return 0;
+		if (x.left == null && x.right == null)
+			return 1;
+		else
+			return leafNodes(x.left) + leafNodes(x.right);
 	}
-
-
-
 
 	public int size() {
 		return size;
@@ -202,7 +220,7 @@ public class MyBST {
 			this.element = element;
 			this.left = left;
 			this.right = right;
-			
+
 		}
 
 	}
@@ -211,37 +229,39 @@ public class MyBST {
 
 		MyBST mybst = new MyBST();
 
-		int[] a = { 15, 12, 9, 56, 1, 16, 19, 22, 3, 100, 2, 25 };
+		int[] a = { 15, 12, 1, 5, 9, 56, 7, 16, 89, 22, 3, 100, 2, 25 };
 
 		for (int j = 0; j < a.length; j++) {
 			mybst.insert(a[j]);
 
 		}
-		mybst.insert(12);
+
+		System.out.println("\nThe tree in sorted ordering - InOrdering ");
 		mybst.printTree();
-		System.out.println("size "+mybst.size);
 
-		TreeSet<Integer> ts = new TreeSet<Integer>();
+		mybst.insert(19);
 
-		for (int j = 0; j < a.length; j++) {
-			ts.add(a[j]);
-			System.out.println("\nAfter inserting " + j + "th item " + a[j]);
-			Iterator<Integer> it = ts.iterator();
-			Integer nextItem = null;
-			while (it.hasNext()) {
-				nextItem = it.next();
-				System.out.print(nextItem + " ");
-			}
-			System.out.println();
-		}
+		System.out.print("\nThe tree in sorted - InOrdering \n");
+		mybst.printTree();
 
-		TreeMap<Integer, String> map = new TreeMap<Integer, String>();
-		map.put(8, "Hello");
-		map.put(10, "World!");
-		map.put(11, "Welcome");
-		map.remove(8);
-		String str = map.get(11) + ", " + map.get(10);
-		System.out.println(str);
+		System.out.print("\nThe tree in PreOrdering \n");
+		mybst.preOrder();
+
+		System.out.println("\n Contains 1? : ");
+		boolean x = mybst.contains(5);
+		System.out.println(x);
+
+		System.out.println("Root: " + mybst.getRoot());
+
+		System.out.println("No of Leafs : " + mybst.leafNodes());
+
+		System.out.println("Size : " + mybst.size());
+
+		System.out.println("Is Empty? : " + mybst.isEmpty());
+
+		System.out.println("Max :" + mybst.findMax());
+
+		System.out.println("Min :" + mybst.findMin());
 
 	}
 }

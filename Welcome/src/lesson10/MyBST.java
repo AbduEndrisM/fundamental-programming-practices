@@ -1,4 +1,4 @@
-package lesson10_2; 
+package lesson10; 
 import java.util.Iterator;
 import java.util.TreeMap;
 import java.util.TreeSet;

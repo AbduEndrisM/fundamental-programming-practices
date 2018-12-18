@@ -1,6 +1,8 @@
 package lesson9.queue;
 
  
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Deque;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -18,7 +20,7 @@ public class QueueDemo {
 	          
 	        System.out.println("Top Element: " + queue.element()); 
 	        System.out.println("remove: " +  queue.remove());
-	       	     	       	       
+	         	       	   //    System.out.println(queue.isEmpty());
 	        System.out.println("Top Element: " + queue.element());
 	        System.out.println("poll: " + queue.poll());
 	         System.out.println("Remove : " + queue.remove());

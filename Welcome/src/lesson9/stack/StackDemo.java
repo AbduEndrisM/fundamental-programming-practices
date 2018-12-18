@@ -1,5 +1,4 @@
 package lesson9.stack;
-
 import java.util.Stack;;
 public class StackDemo {
 
@@ -15,7 +14,10 @@ public class StackDemo {
 		System.out.println("Top Element : " + stack.peek());
 		stack.pop();
 		System.out.println("Element of stack : " + stack);
+		
 		System.out.println("String Array");
+		
+		//System.out.println(stack.empty());
 		Stack<String> s1 = new Stack<String>();
 		s1.push("Red");
 		s1.push("Blue");

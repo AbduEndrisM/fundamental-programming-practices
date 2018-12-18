@@ -1,4 +1,4 @@
-package lesson9;
+package lesson9.stack;
 
 //User Implementation of Stack 
 /*interface Stack1 {

@@ -1,6 +1,6 @@
 package exams.March2017.prob2;
 
-public class Automobile {
+public class Automobile extends Vehicle {
 	private String ownerName;
 	private String license;
 	private int milesUsedToday;

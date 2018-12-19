@@ -2,7 +2,7 @@ package exams.March2017.prob2;
 
 import java.time.LocalDate;
 
-public class Boat {
+public class Boat extends Vehicle {
 	private String owner;
 	private LocalDate lastServiced;
 	private int milesUsedToday;

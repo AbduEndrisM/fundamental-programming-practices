@@ -1,6 +1,6 @@
 package exams.March2017.prob2;
 
-public class Bicycle {
+public class Bicycle extends Vehicle{
 	private String owner;
 	private String make;
 	private int milesUsedToday;

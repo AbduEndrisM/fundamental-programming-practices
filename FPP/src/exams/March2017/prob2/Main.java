@@ -20,10 +20,12 @@ public class Main {
 		auto3.setMilesUsedToday(18);
 		Boat boat2 = new Boat("Anne", LocalDate.of(11,11,11));
 		boat2.setMilesUsedToday(17);
-		Object[] vehicles = {bike1, auto1, boat1, auto2,bike2,
-				auto3, boat2};
-		List/*<implement>*/ vehicleList = MilesCounter.convertArray(vehicles);
+		
+		Object[] vehicles = {bike1, auto1, boat1, auto2, bike2, auto3, boat2};
+		
+		List<Vehicle> vehicleList = MilesCounter.convertArray(vehicles);
 		int totalMiles = MilesCounter.computeTotalMiles(vehicleList);
+		System.out.println(totalMiles);
 		
 
 	}

@@ -9,28 +9,25 @@ public class DoublyLinkedList {
 		//adds to the end of the list
 		public void addLast(String item){
 			//implement
-		
-			if(header==null) {
-				//Node temp=new Node();
-			header.previous=null;
-			header.next=null;
-			header.value=item;
-			}
-			else {
-				
-				Node temp=header;
-			
-			while(temp.next!=null) {
-				temp=temp.next;
-			}
-			Node temp2=null;
-			
-			temp2.previous=temp.previous;
-			temp2.value=item;
-			temp2.next=null;
-					header=temp2;
+			if (header.previous == null && header.next==null && header.value==null) {
+				Node temp = new Node();
+				temp.next = null;
+				temp.previous = null;
+				temp.value = item;
+				header = temp;
+			} else {
+				Node temp = header;
+				while (temp.next != null) {
+					temp = temp.next;
+				}
+				Node temp2 = new Node();
+				temp2.previous = temp;
+				temp2.next = null;
+				temp2.value = item;
+				temp.next = temp2;
 			}
 		}
+		
 		@Override
 		public String toString() {
 			

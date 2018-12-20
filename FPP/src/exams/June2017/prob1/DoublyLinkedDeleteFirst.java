@@ -13,15 +13,31 @@ public class DoublyLinkedDeleteFirst {
 	//removes the node at position 1 and returns
 	//the string contained in that node
 	public String deleteFirst() {
-		//implement
+		/*//implement
 		if(isEmpty() || header.next.next==null)
 			throw new IllegalStateException();
+		else {
+			
+		
+		String x = header.next.next.value;
+		Node p= header.next.next;
+		Node n =header.next.next.next.previous;
+		
+		if (p==null)
+			header.next.next=null;
+		else
+		{
+		p = n;
+		n=p;
+		
+		};
+	  }
+		*/
 		return null;
 	}
-	
 	public boolean isEmpty() {
 		//implement
-		if(header==null)
+		if(header.next==null)
 		return true;
 		else
 			return false;

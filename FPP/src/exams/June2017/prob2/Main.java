@@ -46,7 +46,7 @@ public class Main {
 		
 		
 		Object[] students = {fts1, fts2, fts3, pts1, pts2, pts3};
-		List/*<implement>*/ studentList = Admin.convertArray(students);
+		List<Student> studentList = Admin.convertArray(students);
 		double averageGpa = Admin.computeAverageGpa(studentList);
 		
 		//Expected average GPA is 3.1347222222222224

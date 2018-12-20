@@ -5,9 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
-
-import lesson5.problem5.Computer;
-
+ 
 public class Marketing {
 	public String employeeName;
 	public String productName;
@@ -30,13 +28,14 @@ public class Marketing {
 
 		if (this == obj)
 			return true;
-		if (!(obj instanceof Computer))// if (this.getClass() != obj.getClass()) //
+		if (!(obj instanceof Marketing))// if (this.getClass() != obj.getClass()) //
 			return false;
 		Marketing m = (Marketing) obj;
 
-		if ((m.employeeName == this.employeeName && m.productName == this.productName
-				&& m.salesAmount == this.salesAmount))
-
+		if ((m.employeeName.equals(this.employeeName)) && (m.productName.equals(this.productName))&& 
+				(m.salesAmount == this.salesAmount))
+//			int x =  Double.compare(m.salesAmount, this.salesAmount); 
+		//this.employeeName.equals (m.salesAmount);
 			return true;
 		return false;
 	}
@@ -50,23 +49,26 @@ public class Marketing {
 
 		ArrayList<Marketing> market = new ArrayList<Marketing>();
 
-		market.add(new Marketing("fd", "sdfd", 245.4));
-		market.add(new Marketing("abd", "sdfd", 2540.4));
-		market.add(new Marketing("efd", "sdfd", 1252.4));
+		market.add(new Marketing("aaa", "sdfd", 222.4));
+		market.add(new Marketing("bbbb", "sdfd", 3833.4));
+		market.add(new Marketing("ccc", "sdfd", 1211.4));
 
 		// Collections.sort(market, new sortBySalesAmount());
 		// System.out.println(market);
 
-		Collections.sort(market, new sortByEmployeeName());
-		// System.out.println(market);
+		//Collections.sort(market, new sortByEmployeeName());
+		Collections.sort(market, new sortByEmployeeSalary());
+		//System.out.println(market);
 
 		List<Marketing> r1 = new ArrayList<>();
 
 		r1 = listMoreThan1000(market);
+		Collections.sort(r1, new sortByEmployeeSalary());
 		System.out.println(r1);
-		// market.remove(1);
+		//market.remove(1);
+		market.size();
 
-		System.out.println("Size : " + market.size());
+	//	System.out.println("Size : " + market.size());
 
 	}
 
@@ -80,8 +82,8 @@ public class Marketing {
 			}
 		}
 
-		Collections.sort(r, new sortByEmployeeName());
-		// System.out.println(r);
+	//	Collections.sort(r, new sortByEmployeeName());
+		//System.out.println(r);
 
 		return r;
 
@@ -104,6 +106,16 @@ class sortByEmployeeName implements Comparator<Marketing> {
 		// TODO Auto-generated method stub
 
 		return o1.employeeName.compareTo(o2.employeeName);
+
+	}
+
+}class sortByEmployeeSalary implements Comparator<Marketing> {
+
+	@Override
+	public int compare(Marketing o1, Marketing o2) {
+		// TODO Auto-generated method stub
+
+		return Double.compare(o1.salesAmount, o2.salesAmount);
 
 	}
 

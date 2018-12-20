@@ -1,5 +1,8 @@
 package lesson8_1.problem1;
 
+import java.util.Collections;
+import java.util.List;
+
 public class MyStringList {
 	private final int INITIAL_LENGTH = 4;
 	private String[] strArray;
@@ -159,16 +162,18 @@ public class MyStringList {
 
 		/*
 		 * System.out.println("The list of size " + l.size() + " is " + l);
-		 * l.remove("Mark"); l.remove("Bob"); System.out.println("The list of size " +
-		 * l.size() + " is " + l); l.insert("Richard", 3);
-		 * System.out.println("The list of size " + l.size() +
-		 * " after inserting Richard into pos 3 is " + l); l.insert("Tonya", 0);
+		 * l.remove("Mark"); l.remove("Bob"); 
+		 * System.out.println("The list of size " + l.size() + " is " + l); 
+		 * l.insert("Richard", 3);
+		 * System.out.println("The list of size " + l.size() + " after inserting Richard into pos 3 is " + l); 
+		 * l.insert("Tonya", 0);
 		 * System.out.println("The list of size " + l.size() +
 		 * " after inserting Tonya into pos 0 is " + l);
 		 * 
 		 */
 
 		// b4 sort
+		 
 		System.out.println("b4 sorting :");
 		System.out.println(l);
 

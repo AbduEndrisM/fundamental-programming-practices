@@ -18,7 +18,8 @@ public class MyStringList {
 	}
 	
 	public void add(String s){
-		if(size == strArray.length) resize();
+		if(size == strArray.length)
+			resize();
 		strArray[size++] = s;
 	}
 	
@@ -36,7 +37,7 @@ public class MyStringList {
 		return false;
 	}
 	
-	/*public void insert(String s, int pos){
+	public void insert(String s, int pos){
 		if(pos > size) return;
 		if(pos >= strArray.length||size+1 > strArray.length) {
 			resize();
@@ -48,9 +49,9 @@ public class MyStringList {
 		System.arraycopy(strArray,pos,temp,pos+1, strArray.length - pos);
 		strArray = temp;
 		++size;
-	}*/
+	}
 	
-	 public void insert(String s, int pos) {
+	/* public void insert(String s, int pos) {
 	 if(pos > size) return;
 		if(pos >= strArray.length||size+1 > strArray.length) {
 			resize();
@@ -63,7 +64,7 @@ public class MyStringList {
         temp[i] =strArray[i - 1];
     strArray = temp;
 		++size;
-}
+}*/
 	
 	public boolean remove(String s){
 		if(size == 0) return false;
@@ -114,12 +115,16 @@ public class MyStringList {
 			System.out.println("The list of size "+l.size()+" is "+l);
 			l.remove("Mark");
 			l.remove("Bob");
+			System.out.println(l.strArray.length);
 			System.out.println("The list of size "+l.size()+" is "+l);
+			//memory shift to left by one - length =9
 			l.insert("Richard",3);
 			System.out.println("The list of size "+l.size()+" after inserting Richard into pos 3 is "+l);
+			//memory shift to left by one - length =10
+			
 			l.insert("Tonya",0);
 			System.out.println("The list of size "+l.size()+" after inserting Tonya into pos 0 is "+l);		
-
+			System.out.println(l.strArray.length);
 	}
 
 }

@@ -2,6 +2,7 @@ package lesson12;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.NoSuchElementException;
 
 class myException extends Exception {
 	myException() {
@@ -22,8 +23,12 @@ public class UserException {
 			String n = br.readLine();
 			System.out.print("Enter your password : ");
 			String m = br.readLine();
+
 			if (m.length() < 6)
-				throw new myException();
+				throw new NoSuchElementException();
+
+			if (m.length() < 6)
+			//	throw new myException();
 			System.out.print("Enterd your age : ");
 			int o = Integer.parseInt(br.readLine());
 			if (o < 18)

@@ -18,9 +18,10 @@ public class EmployeeAdmin {
 		and you must define your own Comparator to be used to compare Employees by ssn. 
 	*/
 	public static List<Employee> prepareReport(HashMap<String, Employee> table, List<String> socSecNums) {
-List<Employee> temp= new ArrayList<Employee>();
+		List<Employee> temp= new ArrayList<Employee>();
 		
-		Set<Entry<String, Employee>> k= table.entrySet();
+		Set<Entry<String, Employee>> k= table.entrySet();		
+		
 		Iterator<Entry<String, Employee>> it= k.iterator();
 		
 		while(it.hasNext()){
@@ -28,8 +29,11 @@ List<Employee> temp= new ArrayList<Employee>();
 			String sr= m.getKey();
 			Employee x= m.getValue();
 			
+			/*if (socSecNums.contains(sr) && x.getSalary()>80000)
+			temp.add(x);
+				*/
 			for(int i=0; i<socSecNums.size();i++){
-				if(sr.equals(socSecNums.get(i))&&x.getSalary()>80_000)
+				if(sr.equals(socSecNums.get(i))&&x.getSalary()>80000)
 					temp.add(x);
 			}
 			

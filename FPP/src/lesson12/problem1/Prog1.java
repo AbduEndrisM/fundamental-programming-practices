@@ -30,6 +30,7 @@ public class Prog1 {
 
 		catch (MyException e) {
 			// TODO: handle exception 
+			
 		}
 	}
 }

@@ -71,7 +71,10 @@ class CompareBySalary implements Comparator<Employee>{
 	public int compare(Employee x, Employee y) {
 		// TODO Auto-generated method stub
 		
-		return y.getName().compareTo(x.getName());
+		return Integer.compare(x.getSalary(), y.getSalary());
+		
+		//return x.getSalary()-y.getSalary();-error
+		//return y.getName().compareTo(x.getName());
 	}
 	
 	

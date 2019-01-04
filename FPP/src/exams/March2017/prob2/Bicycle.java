@@ -10,7 +10,7 @@ public class Bicycle extends Vehicle{
 	}
 	public String getOwner() {
 		return owner;
-	}
+	} 
 	public void setOwner(String owner) {
 		this.owner = owner;
 	}

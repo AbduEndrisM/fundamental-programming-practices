@@ -26,8 +26,8 @@ public class EmployeeInfo {
 	 */
 	public static void main(String[] args) {	
 		List<Employee> myDupsRemoved = removeDuplicates(TestData.originalList);
-		boolean dupsCorrectlyRemoved = Util.listsAreEqual(TestData.dupsRemoved, myDupsRemoved);
-		System.out.println("Is answer correct? " + dupsCorrectlyRemoved);
+		//boolean dupsCorrectlyRemoved = Util.listsAreEqual(TestData.dupsRemoved, myDupsRemoved);
+		//System.out.println("Is answer correct? " + dupsCorrectlyRemoved);
 	}
 	
 	

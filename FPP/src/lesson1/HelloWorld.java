@@ -7,9 +7,13 @@ public class HelloWorld {
 		
 		System.out.println("Hello, World!");
 		
-		System.out.println("Welcome to my first java program!");
+	//	System.out.println("Welcome to my first java program!");
 		
-		System.out.println(Math.pow(0, 1));
+		//System.out.println(Math.pow(0, 1));
+	}
+	
+	public static String Abdu() {
+		return "Hello";
 	}
 	
 }

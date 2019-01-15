@@ -2,15 +2,16 @@ package two;
 
 //Static methods and variables
 
-class One {
-
-	static void getX() {
-		System.out.println("Abdu");
+public class One {
+	static int x=2;
+	
+	
+	 static void getX() {
+		System.out.println(x);
 	}
-
-	private static void main(String[] args) {
-
-		getX();
+	
+	public static void main(String[] args) {
+		One.getX();
 	}
 
 }

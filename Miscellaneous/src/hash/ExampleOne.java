@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -55,12 +56,13 @@ public class ExampleOne {
 		m2.put(4, "Sobah");
 		m2.put(2,"Nega"); 
 		m2.put(1, "Abdu");
-		System.out.println(m2);
+	//	System.out.println(m2);
 		
 		List<String> list = new ArrayList<String>(m2.values());
 			System.out.println(Collections.frequency(list, "Abdu"));;
 			
-		
+			
+				
 		Set <Integer> s = new HashSet<Integer>();
 		
 		s.addAll(m2.keySet());

@@ -1,4 +1,4 @@
-package two.classWork;
+package one.two;
 
 public enum AccountType {
 	CHECKING,

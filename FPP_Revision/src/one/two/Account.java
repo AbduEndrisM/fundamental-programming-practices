@@ -1,4 +1,4 @@
-package two.classWork;
+package one.two;
 
 public class Account {
 
@@ -7,11 +7,10 @@ public class Account {
 	private Employee employee;
 
 	public Account(double balance, AccountType accountType, Employee employee) {
-		
-		  this.balance = balance; 
-		  this.accountType = accountType; 
-		  this.employee =  employee;
-		 
+		/*
+		 * this.balance = balance; this.accountType = accountType; this.employee =
+		 * employee;
+		 */
 	}
 
 	public Account(AccountType accountType, Employee employee) {
@@ -21,32 +20,22 @@ public class Account {
 	}
 
 	protected void makeDeposite(double amount) {
-		amount += amount;
 
 	}
 
 	protected boolean makeWithdrawal(double amount) {
-		if (amount > balance)
-			return false;
-		else {
-			balance = balance - amount;
-			return true;
-		}
-	}
-
-	protected double getBalance() {
-
-		return balance;
+		return false;
 
 	}
 
-	@Override
+	protected double getBalance(double amount) {
+		return amount;
+
+	}
+	
 	public String toString() {
-		 
-			return "Account Type: " + accountType + ": Current Balance: " + getBalance();
-		 
-
-
+		return null;
 	}
+
 
 }

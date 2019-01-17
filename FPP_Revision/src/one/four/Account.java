@@ -21,7 +21,7 @@ abstract class Account {
 
 	protected boolean makeWithdrawal(double amount) {
 		if (getAccount().equals("RETIREMENT")) {
-			balance = balance-balance*(2/100);
+			balance = (balance-balance*(2/100))-amount;
 		}
 
 		return false;

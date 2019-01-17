@@ -25,19 +25,36 @@ public class Main {
 
 		// for phase I – console output
 		Scanner sc = new Scanner(System.in);
-		System.out.print("See a report of all account balances? (y/n) ");
-		String answer = sc.next();
 		
-		if (answer.equalsIgnoreCase("y")) {
-			
+		System.out.println("A. See a report of all accounts.");
+		System.out.println("B. Make a deposit.");
+		System.out.println("C. Make a withdrawal.");
+		System.out.println("Make a selection (A/B/C)");
+		
+		char choice = sc.nextLine().charAt(0);
+		switch (choice) {
+		case 'A':
 			for (Employee e : emp) {
 				System.out.println("\n\nName: " + e.getName());
 				System.out.println(e.getFormatedAcctInfo());
+				 
 
 			}
-		} else {
-			System.out.println("Have a good day!");
+			break;
+		case 'B':
+		
+			for(Employee e: emp)
+			System.out.println(e.getName());
+			System.out.println("Make a selection (0/1/2");
+			int select = sc.nextInt();
+					
+			
+			break;
+		case 'C':
+			break;
+			
 		}
+		 
 
 	}
 }

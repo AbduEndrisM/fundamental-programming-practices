@@ -53,7 +53,7 @@ public class Employee  {
 
 	public String getFormatedAcctInfo() {
 		 
-		String info = accounts.get(0) + "\n" + accounts.get(1) + " \n" + accounts.get(2);
+		String info = accounts+ " " + accounts  + " " + accounts  ;
 
 		return info;
 
@@ -61,15 +61,15 @@ public class Employee  {
 
 	public void createNewSavings(double startingBalance) {
 
-		//accounts.add(0, ( new Account(startingBalance, this) ));
+		accounts.add( ( new SavingAccount(startingBalance, this) ));
 	}
 
 	public void createNewChecking(double startingBalance) {
-		//accounts.add(0, ( new Account(startingBalance, this) ));
+		accounts.add(( new CheckingAccount(startingBalance, this) ));
 	}
 
 	public void createNewRetirement(double startingBalance) {
-		//accounts.add(0, ( new Account(startingBalance, this) ));
+		accounts.add( ( new RetirementAccount(startingBalance, this) ));
 	}
 
 }

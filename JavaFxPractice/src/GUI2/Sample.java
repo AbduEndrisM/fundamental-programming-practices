@@ -19,7 +19,10 @@ public class Sample extends Application {
 	public void start(Stage firstStage) throws Exception {
 	 
 		
-	 	Parent root = FXMLLoader.load(getClass().getResource("/GUI2/Main.fxml"));
+	 
+		
+		
+		Parent root = FXMLLoader.load(getClass().getResource("/GUI2/Main.fxml"));
 		
 			
 		Scene scene = new Scene(root);

@@ -4,7 +4,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="181.0" prefWidth="334.0" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI2.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI2.Controller">
    <children>
       <TextField fx:id="firstNum" layoutX="38.0" layoutY="26.0" prefHeight="33.0" prefWidth="99.0" />
       <TextField fx:id="secNum" layoutX="163.0" layoutY="26.0" prefHeight="33.0" prefWidth="112.0" />
@@ -12,6 +12,7 @@
       <Button fx:id="b2" layoutX="103.0" layoutY="78.0" mnemonicParsing="false" onAction="#sub" text="Sub" />
       <Button fx:id="b3" layoutX="167.0" layoutY="78.0" mnemonicParsing="false" onAction="#mul" text="Mul" />
       <Button fx:id="b4" layoutX="232.0" layoutY="78.0" mnemonicParsing="false" onAction="#div" text="Div" />
-      <TextField fx:id="t3" editable="false" layoutX="88.0" layoutY="121.0" prefHeight="33.0" prefWidth="120.0" />
+      <TextField fx:id="t3" editable="false" layoutX="62.0" layoutY="121.0" prefHeight="33.0" prefWidth="120.0" />
+      <Button fx:id="b5" layoutX="220.0" layoutY="125.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="58.0" text="Clear" />
    </children>
-</fx:root>
+</AnchorPane>

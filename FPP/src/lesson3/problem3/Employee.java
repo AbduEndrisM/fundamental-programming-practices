@@ -39,7 +39,7 @@ public class Employee {
 		// implement
 		String info = "Accont info for " + name + ":" + "\n\n" + checkingAcct + savingsAcct + " \n " + retirementAcct;
 
-		return null;
+		return info;
 	}
 
 	public void deposit(String acctType, double amt) {

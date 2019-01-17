@@ -1,4 +1,4 @@
-package two.practice;
+package one.mixed;
 
 //Static methods and variables
 

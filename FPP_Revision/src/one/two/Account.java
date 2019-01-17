@@ -7,35 +7,41 @@ public class Account {
 	private Employee employee;
 
 	public Account(double balance, AccountType accountType, Employee employee) {
-		/*
-		 * this.balance = balance; this.accountType = accountType; this.employee =
-		 * employee;
-		 */
+		this(accountType,employee);
+		this.balance = balance;
+
 	}
 
 	public Account(AccountType accountType, Employee employee) {
-		/*
-		 * this.accountType = accountType; this.employee = employee;
-		 */
+
+		this.accountType = accountType;
+		this.employee = employee;
+
 	}
 
 	protected void makeDeposite(double amount) {
+		balance=balance+amount;
 
 	}
 
 	protected boolean makeWithdrawal(double amount) {
+		if (balance<=amount)
 		return false;
+		else
+		{
+			balance= balance-amount;
+			return true;
+		}
 
 	}
 
-	protected double getBalance(double amount) {
-		return amount;
+	protected double getBalance() {
+		return balance;
 
 	}
-	
+
 	public String toString() {
-		return null;
+		return "Acc Type: "+accountType+ "\t Curr Balance: "+balance;
 	}
-
 
 }

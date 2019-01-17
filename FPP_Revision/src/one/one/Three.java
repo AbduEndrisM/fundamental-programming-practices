@@ -1,10 +1,8 @@
 package one.one;
  
-
-import java.util.ArrayList;
+ 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.HashMap; 
 import java.util.Scanner;
 
 //Remove Duplicate elements of an array using HashMap
@@ -18,13 +16,13 @@ public static void main(String[] args) {
 	System.out.println(Arrays.toString(result));
 	
 	
-	Scanner sc = new Scanner(System.in);
+	/*Scanner sc = new Scanner(System.in);
 	System.out.print("Type your name: ");
-	System.out.println("you wrote: " + sc.nextLine());
+	System.out.println("you wrote: " + sc.nextLine() );
 	System.out.print("Type your age: ");
 	System.out.println("your age: " + sc.nextInt());
-	sc.close(); //don’t forget to close 
-}
+	//sc.close(); //don’t forget to close 
+*/}
 
 private static String[] removeDuplicate(String[] data) {
 

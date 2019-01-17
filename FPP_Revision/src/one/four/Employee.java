@@ -1,12 +1,11 @@
-package three.classwork2;
+package one.four;
  
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
 
 public class Employee  {
-
-	
+ 
 	  List<Account> accounts = new ArrayList<Account>();
 	  
 
@@ -39,7 +38,7 @@ public class Employee  {
 
 	public void withdraw (int accountIndex, double amt) {
 		Account selected = accounts.get(accountIndex);
-		selected.makeWithdrawal(amt); 
+		selected.makeWithdrawal(amt);
  	}
 
 	public GregorianCalendar getHireDate() {
@@ -62,17 +61,15 @@ public class Employee  {
 
 	public void createNewSavings(double startingBalance) {
 
-		
-		accounts.add(0,this);
-
+		//accounts.add(0, ( new Account(startingBalance, this) ));
 	}
 
 	public void createNewChecking(double startingBalance) {
-		accounts.add(startingBalance, this );
+		//accounts.add(0, ( new Account(startingBalance, this) ));
 	}
 
 	public void createNewRetirement(double startingBalance) {
-		accounts.add(startingBalance, this );
+		//accounts.add(0, ( new Account(startingBalance, this) ));
 	}
 
 }

@@ -7,14 +7,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI4.Controller">
    <children>
-      <Label fx:id="lbl2" alignment="CENTER" contentDisplay="CENTER" layoutX="81.0" layoutY="14.0" prefHeight="45.0" prefWidth="185.0" text="Welcome to LMS" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
       <Button fx:id="btnAdd" layoutX="18.0" layoutY="86.0" mnemonicParsing="false" onAction="#add" prefHeight="28.0" prefWidth="63.0" text="Add" />
       <Button fx:id="btnEdit" layoutX="104.0" layoutY="86.0" mnemonicParsing="false" onAction="#edit" prefHeight="28.0" prefWidth="63.0" text="Edit" />
       <Button fx:id="btnDelete" layoutX="183.0" layoutY="86.0" mnemonicParsing="false" onAction="#delete" prefHeight="28.0" prefWidth="63.0" text="Delete" />
       <Button fx:id="btnCancel" layoutX="266.0" layoutY="86.0" mnemonicParsing="false" onAction="#cancel" prefHeight="28.0" prefWidth="63.0" text="Close" />
+      <Label fx:id="lbl2" alignment="CENTER" contentDisplay="CENTER" layoutX="81.0" layoutY="14.0" prefHeight="45.0" prefWidth="185.0" text="Welcome to LA, CA" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

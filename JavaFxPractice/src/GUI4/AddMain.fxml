@@ -7,15 +7,15 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI4.Controller">
     <children>
-      <Label fx:id="lblFName" layoutX="36.0" layoutY="33.0" prefHeight="25.0" prefWidth="81.0" text="First Name" />
       <TextField fx:id="txtFName" layoutX="129.0" layoutY="33.0" prefHeight="25.0" prefWidth="133.0" />
-      <Label fx:id="lblLName" layoutX="36.0" layoutY="71.0" prefHeight="25.0" prefWidth="81.0" text="Last Name" />
       <TextField fx:id="txtLName" layoutX="129.0" layoutY="71.0" prefHeight="25.0" prefWidth="133.0" />
-      <Label fx:id="lblAge" layoutX="36.0" layoutY="105.0" prefHeight="25.0" prefWidth="81.0" text="Age" />
       <TextField fx:id="txtAge" layoutX="129.0" layoutY="105.0" prefHeight="25.0" prefWidth="133.0" />
-      <Label fx:id="lblSex" layoutX="41.0" layoutY="143.0" prefHeight="25.0" prefWidth="81.0" text="Sex" />
       <TextField fx:id="txtSex" layoutX="129.0" layoutY="143.0" prefHeight="25.0" prefWidth="133.0" />
       <Button fx:id="btnRegister" layoutX="81.0" layoutY="188.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="25.0" prefWidth="73.0" text="Register" />
       <Button fx:id="btnCancel" layoutX="189.0" layoutY="188.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="73.0" text="Cancel" />
+      <Label fx:id="lblFName" layoutX="36.0" layoutY="33.0" prefHeight="25.0" prefWidth="81.0" text="First Name" />
+      <Label fx:id="lblLName" layoutX="36.0" layoutY="71.0" prefHeight="25.0" prefWidth="81.0" text="Last Name" />
+      <Label fx:id="lblAge" layoutX="36.0" layoutY="105.0" prefHeight="25.0" prefWidth="81.0" text="Age" />
+      <Label fx:id="lblSex" layoutX="41.0" layoutY="143.0" prefHeight="25.0" prefWidth="81.0" text="Sex" />
    </children>
 </AnchorPane>

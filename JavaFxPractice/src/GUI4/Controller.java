@@ -1,8 +1,6 @@
 package GUI4;
-
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.List;
+ 
+import java.util.Hashtable; 
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -17,13 +15,14 @@ import javafx.stage.Stage;
 
 public class Controller {
 
+	
 	@FXML
-	private Label lbl;
+	private Label lbl, lblUsername, lblPassword;
 
 	@FXML
 	private TextField txtUsername, txtPassword;
 	@FXML
-	private Button btnUsername, btnPassword, btnLogin, btnCancel;
+	private Button btnLogin, btnCancel;
 
 	// Second Main
 	@FXML
@@ -39,6 +38,10 @@ public class Controller {
 	@FXML
 	private TextField txtFName, txtLName, txtSex, txtAge;
 
+	
+	Hashtable<String, Student> objStudents = new Hashtable<>();
+
+	
 	public void login(ActionEvent e) throws Exception {
 		if (txtUsername.getText().equals("abdu") && txtPassword.getText().equals("123")) {
 			// lbl.setText("Login Successful");
@@ -61,11 +64,13 @@ public class Controller {
 	}
 
 	public void cancel(ActionEvent e) throws Exception {
-		System.out.println("Abdu");
+		
+		 
+		//System.out.println("Abdu");
 		// get a handle to the stage
-	//	Stage stage = (Stage) btnCancel.getScene().getWindow();
+		  Stage stage = (Stage) btnCancel.getScene().getWindow();
 		// do what you have to do
-		//stage.close();
+		  stage.close();
 	}
 
 	public void add(ActionEvent e) throws Exception {
@@ -88,28 +93,21 @@ public class Controller {
 
 		Student s = new Student();
 		
-		List<Student> student = new ArrayList<>();
+		s.setfName(txtFName.getText());
+		s.setlName(txtLName.getText());
+		s.setAge(Integer.parseInt(txtAge.getText()));
+		s.setSex(txtSex.getText());
 
-	
-		 s.setfName(txtFName.getText());
-		 s.setlName(txtLName.getText());
-		 s.setAge(Integer.parseInt(txtAge.getText()));
-		 s.setSex(txtSex.getText());
- 
-
-		 student.add(s);
-	 
-		Hashtable<String,  Student> objStudents = new Hashtable<>();
-		
 		objStudents.put(txtFName.getText(), s);
-		
-		/*Hashtable<Student, List<Student>> objStudents1 = new Hashtable<Student, List<Student>>();
-		objStudents.put(student.get(0), student);
-*/
-		for (Student s1 : student) {
-			System.out.println(s1);
+
+		for (Student es : objStudents.values()) {
+			System.out.println(es.toString());
 		}
 
+		/*  
+		 * Hashtable<Student, List<Student>> objStudents1 = new Hashtable<Student,
+		 * List<Student>>(); objStudents.put(student.get(0), student);
+		 */
 		txtFName.setText(null);
 		txtLName.setText(null);
 		txtAge.setText(null);

@@ -2,7 +2,7 @@ package miscellaneous.two;
 
 import java.util.Random;
 
-public class ProgOne {
+public class RandomNumber {
 
 	public static void main(String[] args) {
 		

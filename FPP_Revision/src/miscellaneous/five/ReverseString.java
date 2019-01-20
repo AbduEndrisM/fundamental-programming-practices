@@ -1,6 +1,6 @@
 package miscellaneous.five;
 
-public class ProgFive {
+public class ReverseString {
 
 	public static void main(String[] args) {
 		String x = "Hello";

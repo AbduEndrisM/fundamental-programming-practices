@@ -1,6 +1,6 @@
 package miscellaneous.four;
  
-public class Product {
+public class StringManipulation {
  
 		public static void main(String[] args){
 		//column names: productId, name,numInStock,provider,pricePerUnit

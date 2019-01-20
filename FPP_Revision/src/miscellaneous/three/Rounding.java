@@ -1,6 +1,6 @@
 package miscellaneous.three;
 
-public class ProgOne {
+public class Rounding {
 
 	public static void main(String[] args) {
 		float x=1.27f;

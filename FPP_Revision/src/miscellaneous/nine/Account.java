@@ -38,6 +38,13 @@ class Account {
 
 	}
 	
+	public double  getBalance() {
+		//implement
+		return balance;
+			}
+	
+	
+	
 	
 	
 }

@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 import javax.xml.soap.SAAJMetaFactory;
-  
+
 class Employee {
 
 	private String name;
@@ -32,58 +32,69 @@ class Employee {
 	}
 
 	public void createNewChecking(double startAmount) {
-		checkingAccount=new Account(this, "CHECKING", startAmount);
-		
+		checkingAccount = new Account(this, "CHECKING", startAmount);
+
 		// implement
 	}
 
 	public void createNewSavings(double startAmount) {
 		// implement
-		savingAccount=new Account(this, "SAVING", startAmount);
+		savingAccount = new Account(this, "SAVING", startAmount);
 	}
 
 	public void createNewRetirement(double startAmount) {
 		// implement
-		retirementAccount=new Account(this, "RETIREMENT", startAmount);
-		
+		retirementAccount = new Account(this, "RETIREMENT", startAmount);
+
 	}
 
 	public void deposit(AccountType acctType, double amt) {
-		switch(acctType) {
+		switch (acctType) {
 		case CHECKING:
 			checkingAccount.makeDeposit(amt);
-		break;
+			break;
 		case SAVINGS:
 			savingAccount.makeDeposit(amt);
-		break;
+			break;
 		case RETIREMENT:
 			retirementAccount.makeDeposit(amt);
-		break;
+			break;
 		}
 		// implement
-	
+
 	}
 
 	public boolean withdraw(AccountType acctType, double amt) {
-		
-		switch(acctType) {
+
+		switch (acctType) {
 		case CHECKING:
 			checkingAccount.makeWithdrawal(amt);
-		break;
+			break;
 		case SAVINGS:
 			savingAccount.makeWithdrawal(amt);
-		break;
+			break;
 		case RETIREMENT:
 			retirementAccount.makeWithdrawal(amt);
-		break;
+			break;
 		}
 		return false;
 		// implement
 	}
 
-	public String getFormattedAcctInfo() {
+	public String getFormattedAccttInfo() {
+		System.out.println("Abdu"+checkingAccount);
 		// implement
-		return  checkingAccount + "\n"+savingAccount+"\n"+retirementAccount+"\n";
-	} 
+		if (!checkingAccount.equals(null)) {
+			if (!savingAccount.equals(null)) {
+				if (!retirementAccount.equals(null)) {
+					return checkingAccount + "\n" + savingAccount + "\n" + retirementAccount + "\n";
+				}
+				return savingAccount + "\n" + checkingAccount + "\n";
+			}
+			return checkingAccount+"\n";
+
+		}
+		return null;
+	}
 
 }

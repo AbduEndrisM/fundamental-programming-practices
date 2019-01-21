@@ -33,16 +33,18 @@ public class Main {
 			//String info = getFormattedAccountInfo();
 //display info to console
 			for (Employee e: emps) {
-				System.out.println("\n ACCOUNT INFO FOR "+ e.getName());
-				System.out.println(e.getFormattedAcctInfo());
+				System.out.println("\n Account info for:  "+ e.getName());
+				System.out.println(e.getFormattedAccttInfo());
 				}
-		} else {
+		}
+			
+		else {
 //do nothing..the application ends here
 		}
 	}
-	/*String getFormattedAccountInfo() {
+/*	String getFormattedAccountInfo() {
 		
 		//implement
 		return null;
-		}
-*/	}
+		}*/
+	}

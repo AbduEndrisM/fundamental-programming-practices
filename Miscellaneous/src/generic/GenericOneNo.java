@@ -1,6 +1,6 @@
 package generic;
 
-
+ 
 public class GenericOneNo {
 
 	public static void main(String[] args) {

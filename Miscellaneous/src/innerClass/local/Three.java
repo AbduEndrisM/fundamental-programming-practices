@@ -9,7 +9,10 @@ class Outer3 {
 	void outerMethod() {
 		int x = 98;	//final int x=98;
 		System.out.println("inside outerMethod");
+		 
+		
 		class Inner {
+		int y=6;
 			void innerMethod() {
 				System.out.println("x= " + x);
 			}

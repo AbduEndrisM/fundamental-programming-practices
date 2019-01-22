@@ -7,9 +7,9 @@ public class Two {
 		public int x = 1;
 
 		void methodInFirstLevel(int x) {
-			System.out.println("x = " + x);
-			System.out.println("this.x = " + this.x);
-			System.out.println("Tow.this.x = " + Two.this.x);
+			System.out.println("x = " + x);	 //23
+			System.out.println("this.x = " + this.x); //1
+			System.out.println("Tow.this.x = " + Two.this.x);	//0
 		}
 	}
 

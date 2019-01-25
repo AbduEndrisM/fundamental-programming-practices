@@ -14,15 +14,15 @@ public class Test {
 
 		// write lambda expression for Consumer interface
 		// nameList.forEach();
-System.out.println(LocalDate.now());
-System.out.println(LocalDateTime.now());
+		System.out.println(LocalDate.now());
+		System.out.println(LocalDateTime.now());
 
 		System.out.println("for each");
 		for (String s : nameList) {
 			System.out.print(s);
 		}
 		System.out.println("\n\nUsing lambda");
-		
+
 		nameList.forEach(n -> {
 			System.out.println(n);
 		});

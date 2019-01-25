@@ -10,8 +10,9 @@ public class SelectionSortForString {
 				"lilliputian", "numberless", "none", "vast", "miniscule" };
 
 //		Arrays.sort(adjs);
+		Arrays.sort(adjs) ;
 
-		SelectionSortForString.sort(adjs);
+	//	SelectionSortForString.sort(adjs);
 		System.out.println(Arrays.toString(adjs));
 
 	}

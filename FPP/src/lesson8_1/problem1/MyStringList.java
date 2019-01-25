@@ -67,7 +67,7 @@ public class MyStringList {
 		}
 		if (index == -1)
 			return false;
-		String[] temp = new String[strArray.length]; // new String [strArray.length-1]
+		String[] temp = new String[strArray.length-1]; // new String [strArray.length-1]
 		System.arraycopy(strArray, 0, temp, 0, index);
 		System.arraycopy(strArray, index + 1, temp, index, strArray.length - (index + 1));
 		strArray = temp;

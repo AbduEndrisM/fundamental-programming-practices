@@ -1,12 +1,14 @@
-package six.stringlist;
+package six.stringmethods;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class MyStringList {
+public class MyStringList  {
 	private final int INITIAL_LENGTH = 2;
 	private String[] strArray;
 	private int size;
@@ -96,7 +98,60 @@ public class MyStringList {
 		}
 
 	}
+	private void sort() {
+		// implement 
+		for(int i=0;i<size;i++) {
+			for(int j=i+1;j<size;j++) {
+				if (strArray[j].compareTo(strArray[i])<0) {
+					String temp =strArray[j];
+					strArray[j]=strArray[i];
+					strArray[i]=temp;
+				}
+			}
+		
+	//Arrays.sort(strArray);
+	
+	}
+	}
 
+	
+	
+	
+	
+	public boolean binarySearch(String key) {
+		// implement
+		sort();	
+	    int l = 0, n = strArray.length - 1; 
+        while (l <= n) { 
+            int m = l + (n - l) / 2;  
+            if (strArray[m].compareTo(key)==0)
+                return true;  
+            if (strArray[m].compareTo(key)<0) 
+                l = m + 1; 
+   
+            else
+                n = m - 1; 
+        } 
+   
+        return false; 
+    }
+	
+	
+	
+	public void insert(String s, int pos) {
+		// implement
+
+		String[] temp = new String[strArray.length + 1];
+		int remainingElements = strArray.length - (pos + 1);
+//copying elements that come before the index that has to be removed
+		System.arraycopy(strArray, 0, temp, 0, pos);
+//copying elements that come after the index that has to be removed
+		System.arraycopy(strArray, pos, temp, pos+1, remainingElements);
+		temp[pos]=s;
+		strArray = temp;
+		size++;
+		}
+	
 	private void resize() {
 		// implement
 		String[] temp = new String[strArray.length * 2];
@@ -124,16 +179,16 @@ public class MyStringList {
 		MyStringList l = new MyStringList();
 		l.add("Bob");
 		//l.add("Abdu");
-		l.add("edwin");
+		l.add("Edwin");
 		System.out.println("The list of size " + l.size() + " is " + l);
 		l.add("Steve");
 		 
 		System.out.println("The list of size " + l.size() + " is " + l);
-//		l.add("Susan");
-//		System.out.println("The list of size " + l.size() + " is " + l);
-//		l.add("Mark");
-//		System.out.println("The list of size " + l.size() + " is " + l);
-//		l.add("Dave");
+		l.add("Susan");
+		System.out.println("The list of size " + l.size() + " is " + l);
+		l.add("Mark");
+		System.out.println("The list of size " + l.size() + " is " + l);
+		l.add("Dave");
 //		System.out.println("The list of size " + l.size() + " is " + l);
 //		l.remove("Mark");
 //		System.out.println("The list of size " + l.size() + " is " + l);
@@ -141,7 +196,14 @@ public class MyStringList {
 //		System.out.println("The list of size " + l.size() + " is " + l);
 		System.out.println(l.find("Abdu"));
 		System.out.println(l.get(3));
-	}
 
+		l.insert("sobah", 1);
+		System.out.println(l);
+		l.sort();
+		System.out.println(l);
+		
+		System.out.println("Edwin is in the list: "+l.binarySearch("Edwin"));
+	}
+ 
 
 }

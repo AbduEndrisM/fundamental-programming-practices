@@ -26,7 +26,8 @@ public class ArrayListString {
 		System.out.println("The list of size " + l.size() + " is " + l);
 		l.remove("Bob");
 		System.out.println("The list of size " + l.size() + " is " + l);
-		
+	 
+	
 	}
 
 }

@@ -1,4 +1,4 @@
-package seven.innerclass;
+package seven.innerclassswing;
  
 import java.awt.BorderLayout;
 import java.awt.Component;

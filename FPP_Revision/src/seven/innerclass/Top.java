@@ -3,7 +3,11 @@ package seven.innerclass;
 public class Top {
 	int t = 1;
 	Middle mid;
-	Middle.Bottom midbot = mid.new Bottom();
+	Middle.Bottom midbot;
+	Top(){
+		mid = new Middle();
+		midbot=new Middle().new Bottom();
+	}
 
 //returns the value in the instance vble of Bottom
 	int readBottom() {

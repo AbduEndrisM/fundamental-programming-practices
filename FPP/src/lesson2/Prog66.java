@@ -1,5 +1,6 @@
 package lesson2;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class Prog66 {
@@ -9,8 +10,7 @@ public class Prog66 {
 
 		String[] string = new String[3]; 
 
-		
-		Scanner sc = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 		System.out.println("Enter strings");
 		
 		

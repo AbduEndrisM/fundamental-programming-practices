@@ -18,6 +18,13 @@ public class Prog4 {
 			System.out.print(hello.charAt(i));
 		} 
 		
+		System.out.println();
+		
+		StringBuilder rev = new StringBuilder(hello);
+		System.out.println(" second way using string builder");		
+
+		System.out.println(rev.reverse());
+		
 	}
 
 }

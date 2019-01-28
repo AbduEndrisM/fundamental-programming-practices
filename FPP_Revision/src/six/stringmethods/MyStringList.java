@@ -203,7 +203,22 @@ public class MyStringList  {
 		System.out.println(l);
 		
 		System.out.println("Edwin is in the list: "+l.binarySearch("Edwin"));
+		
+ 
+
+		Iterator<String> myIter = l.iterator();
+		while (myIter.hasNext()) {
+		System.out.print(myIter.next()+" ");
+		}
+		
 	}
+
+	private Iterator<String> iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	 
  
 
 }

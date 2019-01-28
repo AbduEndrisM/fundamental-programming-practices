@@ -19,5 +19,47 @@ public static void main(String[] args) {
 	}
 
 
+	
+	
+		Employee a = new Employee("Alice");
+		Employee b = new Employee("Bob");
+		swap(a,b);
+		System.out.println(a+" "+b);
+		
+	int num = 50;
+	triple(num);
+
+	System.out.println(num);
+	
+	
 }
+
+	private static void swap(Employee x, Employee y) {
+	// 
+		Employee temp = x;
+		 x = y;
+			 y = temp;
+	
+}
+
+	public static void triple(int x) {
+		x = 3 * x;
+	}
+}
+
+class Employee {
+	String x;
+
+	Employee(String x) {
+		this.x = x;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [x=" + x + "]";
+	}
+	
+	
+
+			
 }

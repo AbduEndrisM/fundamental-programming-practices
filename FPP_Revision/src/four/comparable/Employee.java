@@ -3,7 +3,7 @@ package four.comparable;
 import java.util.Arrays;
 import java.util.Comparator;
 
-class Employee implements Comparable<Employee> {
+class Employee /*implements Comparable<Employee>*/ {
 	String name;
 	int salary;
 
@@ -32,11 +32,7 @@ class Employee implements Comparable<Employee> {
 
 		Employee[] emps = { new Employee("Pink", 200), new Employee("Gaga", 900), new Employee("Mike", 500),new Employee("Abdu", 500) };
 
-		//////////////////////////////////////////
-		System.out.println("Compare - Salary");
-		Arrays.sort(emps);
-		System.out.println(Arrays.toString(emps));
-
+		
 	
 		///////////////////////////////////
 		//By name
@@ -53,21 +49,30 @@ class Employee implements Comparable<Employee> {
 	System.out.println(Arrays.toString(emps));
 	
 
-	//////////////////////////////////////////
+	////////////////////////////////////////// method two of sorting method
 	//By salary
-	Arrays.sort(emps, new Comparator<Employee>() {
+	 Comparator<Employee> employeeNameComparator = new Comparator<Employee>() {
 
 		@Override
 		public int compare(Employee o1, Employee o2) {
 			// TODO Auto-generated method stub
 			return o1.salary - o2.salary;
 		}
-	});
+	};
 	
 	System.out.println("Comparator - Salary");
 	System.out.println(Arrays.toString(emps));
 
 	
+	//////////////////////////////////
+//////////////////////////////////////////
+System.out.println("Compare - Salary");
+Arrays.sort(emps,employeeNameComparator);
+System.out.println(Arrays.toString(emps));
+
+//												comparator implements compare method
+//												comparable implements compareTo methos
+
 	
 	//////////////////////////////////////////
 	//By salary then name
@@ -91,14 +96,14 @@ class Employee implements Comparable<Employee> {
 	}
 
 
-	// Salary
+/*	// Salary  using compareTo
 	@Override
 	public int compareTo(Employee o) {
-		// return (Integer)(this.salary-o.salary);
+//		 return (this.salary-o.salary);
 		return (Integer.compare(this.salary, o.salary));
 
 	}
-	
+	*/
 
 
 

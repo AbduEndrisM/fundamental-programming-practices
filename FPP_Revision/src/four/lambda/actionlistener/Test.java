@@ -1,8 +1,6 @@
 package four.lambda.actionlistener;
 
-import java.awt.BorderLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.BorderLayout; 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -13,7 +11,7 @@ public class Test {
         JButton btnTest = new JButton("Hello Button");
 
         
-        btnTest.addActionListener((ActionEvent e) ->{
+        btnTest.addActionListener( e ->{
         	System.out.println("Abdu");
         	System.out.println("Edris");
         	

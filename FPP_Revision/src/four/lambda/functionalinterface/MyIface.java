@@ -13,9 +13,12 @@ package four.lambda.functionalinterface;
  * 
  *
  */
+
 @FunctionalInterface
 public interface MyIface {
 
+	double getNumber();
+ 
 	
 
 }

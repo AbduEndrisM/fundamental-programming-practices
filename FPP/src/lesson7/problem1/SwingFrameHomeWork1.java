@@ -1,9 +1,5 @@
 package lesson7.problem1;
-
-import java.awt.Dimension;
-import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+ 
 
 import javax.swing.*;
 
@@ -13,11 +9,7 @@ public class SwingFrameHomeWork1 {
 	//	frame.setLayout(null);
 
 		JPanel panel1 = new JPanel();
-		 
-
-		
-		 
-		
+ 
 		JLabel lbl1 = new JLabel("Mile:");
 		lbl1.setBounds(50, 50, 50, 25);
 		frame.add(lbl1);

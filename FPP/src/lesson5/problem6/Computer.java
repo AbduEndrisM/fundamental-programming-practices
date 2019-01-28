@@ -1,7 +1,5 @@
 package lesson5.problem6;
-
-import lesson5.problem6.prob2.PersonDeep;
-
+ 
 public class Computer implements Cloneable {
 
 	private String manufacturer;

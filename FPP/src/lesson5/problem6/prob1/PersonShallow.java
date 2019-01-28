@@ -28,7 +28,7 @@ public class PersonShallow implements Cloneable {
 
 	
 	@Override
-	public Object clone() throws CloneNotSupportedException {
+	public Object clone() throws CloneNotSupportedException  {
 
 		PersonShallow clone = (PersonShallow) super.clone();
 
@@ -42,7 +42,7 @@ public class PersonShallow implements Cloneable {
 
 		PersonShallow obj = new PersonShallow("Abdu", new Computer("Asus", "Intel", 4, 2.3));
 
-		System.out.println("Before Cloning ");
+		System.out.println("Before Cloning");
 		System.out.println(obj);
 
 		PersonShallow cloObj = (PersonShallow) obj.clone();
@@ -57,4 +57,5 @@ public class PersonShallow implements Cloneable {
 		
 
 	}
+
 }

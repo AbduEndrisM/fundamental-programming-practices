@@ -1,4 +1,4 @@
-package five.one.case3;
+package five.equals.case3;
 
 public class PersonWithJob {
 	public final Person p;

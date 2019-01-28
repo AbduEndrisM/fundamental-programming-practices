@@ -1,4 +1,4 @@
-package five.one.case1;
+package five.equals.case1;
 
 
 public class PersonWithJob extends Person {

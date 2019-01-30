@@ -73,6 +73,7 @@ public class ArrayQueueImpl {
 	}
 
 	public static void main(String[] args) {
+		
 		ArrayQueueImpl q = new ArrayQueueImpl();
 		q.enqueue(12);
 		q.enqueue(10);

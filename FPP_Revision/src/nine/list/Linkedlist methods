@@ -1,0 +1,28 @@
+
+public interface MyLinkedList {
+//	Ex: 1
+	public void addLast(Object element);
+	public void addFirst(Object element);
+	public void add(int index, Object element);
+	public Object get(int index);
+	public boolean isEmpty();
+	public String toString();
+	public int size();
+
+//	Ex: 2
+	public Object findFirst();
+	public Object findLast();
+	public boolean find(Object s);
+	public Object removeFirst();
+	public Object removeLast();
+	public boolean remove(int index);
+
+//	Ex: 3
+	public Object findMin();
+	public Object findMax();
+	public void sort();
+
+//	Ex: 4
+	public String recurMax();
+
+}

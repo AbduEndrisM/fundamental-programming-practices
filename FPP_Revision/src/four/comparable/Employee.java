@@ -71,7 +71,7 @@ Arrays.sort(emps,employeeNameComparator);
 System.out.println(Arrays.toString(emps));
 
 //												comparator implements compare method
-//												comparable implements compareTo methos
+//												comparable implements compareTo methods
 
 	
 	//////////////////////////////////////////

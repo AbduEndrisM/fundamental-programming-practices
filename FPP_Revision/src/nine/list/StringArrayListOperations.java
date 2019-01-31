@@ -1,11 +1,11 @@
 package nine.list;
 
-public class MyStringList {
+public class StringArrayListOperations {
 	private final int INITIAL_LENGTH = 4;
 	private String[] strArray;
 	private int size;
 
-	public MyStringList() {
+	public StringArrayListOperations() {
 		strArray = new String[INITIAL_LENGTH];
 		size = 0;
 	}
@@ -86,7 +86,7 @@ public class MyStringList {
 	}
 
 	public static void main(String[] args) {
-		MyStringList l = new MyStringList();
+		StringArrayListOperations l = new StringArrayListOperations();
 		l.add("Bob");
 		l.add("Steve");
 		l.add("Susan");

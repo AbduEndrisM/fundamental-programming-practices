@@ -9,4 +9,20 @@ public interface LinkedListMethods {
 	public String toString();
 	public int size();
 
+	
+	public String findFirst();
+	public String findLast();
+	public boolean find(String s);
+	public void removeFirst();
+	public void removeLast();
+	public boolean remove(int index);
+	
+	public String findMin();
+	public String findMax();
+	public void sort();
+
+
+	public String recurMax();
+
+
 }

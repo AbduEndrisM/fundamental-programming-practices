@@ -9,8 +9,31 @@ public class DoublyLinkedList {
 		//adds to the end of the list
 		public void addLast(String item){
 			//implement
-			
-		}
+			if (header.next==null) {
+				Node temp= new Node();
+				temp.previous=header;
+				temp.next=null;
+				temp.value=item;
+				header.next=temp;
+			}
+			else  {
+				Node temp = new Node();
+				temp=header.next;
+				while(temp.next!=null) {
+				temp = temp.next;
+				}
+				
+					Node temp2 = new Node();
+					temp2.previous=temp;
+					temp2.next=null;
+					temp.next=temp2;
+					temp2.value=item;
+				}
+				
+			}
+		
+				
+		
 		@Override
 		public String toString() {
 			
@@ -30,6 +53,13 @@ public class DoublyLinkedList {
 			Node next;
 			Node previous;
 			
+		/*	public Node(Node previousString value, Node next, ) {
+				 
+				this.value = value;
+				this.next = next;
+				this.previous = previous;
+			}*/
+
 			public String toString() {
 				return value == null ? "null" : value;
 			}
@@ -39,7 +69,7 @@ public class DoublyLinkedList {
 			DoublyLinkedList list = new DoublyLinkedList();
 			list.addLast("Bob");
 			list.addLast("Harry");
-			list.addLast("Steve");
+			list.addLast("Carol");
 			System.out.println(list);
 		}
 }

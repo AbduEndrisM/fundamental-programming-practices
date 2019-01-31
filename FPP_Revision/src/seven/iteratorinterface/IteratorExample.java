@@ -29,7 +29,7 @@ public class IteratorExample   {
 		System.out.print(str.toString());
 		}
 		System.out.println();
-		// using java 8 forEach method with MyStringList
+		// using java 8 forEach method with StringArrayListOperations
 		l.forEach(name -> System.out.print(name));
 
 	}

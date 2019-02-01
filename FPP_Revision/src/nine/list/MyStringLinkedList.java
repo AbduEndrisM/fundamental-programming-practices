@@ -291,7 +291,7 @@ public class MyStringLinkedList implements LinkedListMethods {
 	}
 
 	public static void main(String[] args) {
-		// MyStringLinkedList list = new MyStringLinkedList();
+		// StackMyStringLinkedList list = new StackMyStringLinkedList();
 
 		LinkedListMethods list = new MyStringLinkedList();
 		list.addFirst("Bob");

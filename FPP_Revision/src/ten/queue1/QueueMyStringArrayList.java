@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
  * background.
  *
  */
-public class QueueMyStringArrayList {
+public class QueueMyStringArrayList implements MyStringQueue {
 
 	private final int INITIAL_LENGTH = 2;
 	private String[] arr = new String[INITIAL_LENGTH];
@@ -39,31 +39,31 @@ public class QueueMyStringArrayList {
 	}
 
 	/** Iqueueert: adds an element to the rear/end of the queue. */
-	public void enqueue(String s) {
+	public void enqueue(String string) {
 		// implement
 		if (rear == arr.length)
 			resize();
 		if ((rear == 0) && (front == -1)) {
-			arr[rear++] = s;
+			arr[rear++] = string;
 
 			front++;
 
 		}
 
 		else {
-			arr[rear++] = s;
+			arr[rear++] = string;
 
 		}
 
 	}
 
-	private void resize() {
+	public void resize() {
 		String[] temp = new String[arr.length * 2];
 		System.arraycopy(arr, 0, temp, 0, arr.length);
 		arr = temp;
 	}
 
-	private boolean isFull() {
+	public boolean isFull() {
 		if (rear == arr.length)
 			return true;
 		return false;

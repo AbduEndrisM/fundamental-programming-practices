@@ -1,9 +1,17 @@
 package ten.queue1;
 
  interface MyStringQueue {
-
-	public void push(String string);
-	public String pop();
-	public String peek();
+	 
+	 public String peek();
+	 public String dequeue();
+	 public void enqueue(String string);
+	 public void resize();
+	 public boolean isFull();
+	 public int size();
+	 public boolean isEmpty();
+	 public void clear();
+	 
 	
 }
+
+ 

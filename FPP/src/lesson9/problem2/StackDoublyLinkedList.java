@@ -48,6 +48,7 @@ class ArrayStack implements Stack1 {
 		topElement = new Node(null, x, null);
 		topElement.next = oldElement;
 		topElement.previous = null;
+		
 		// oldElement.previous = topElement; // <----- problem here
 
 		sizeOfStack++;

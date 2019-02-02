@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
    using an array in the background.
  *
  */
-public class StackMyStringArrayList {
+public class StackMyStringArrayList implements MyStringStack {
 	
 	private final int INITIAL_LENGTH = 2;
 	private int top;
@@ -30,7 +30,7 @@ public class StackMyStringArrayList {
 
 	}
 	
-	private void resize() {
+	public void resize() {
 		String[] temp = new String[stackArray.length*2];
 		System.arraycopy(stackArray, 0, temp, 0, top);
 		stackArray =temp;
@@ -102,6 +102,16 @@ public class StackMyStringArrayList {
         return index;
     }
 	
+	 public boolean isFull() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	 public void clear() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 /*	private int lastIndexOf(String o) {
 		//implement
 		int pos = -1;
@@ -145,4 +155,6 @@ public class StackMyStringArrayList {
 		}
 		
 	}
+
+
 }

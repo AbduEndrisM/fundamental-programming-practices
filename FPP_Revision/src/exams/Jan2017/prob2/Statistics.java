@@ -1,4 +1,4 @@
-package exams.Jan2017.Problem.prob2;
+package exams.Jan2017.prob2;
 import java.util.*;
 public class Statistics {
 	/** 

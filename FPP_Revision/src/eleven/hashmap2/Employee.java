@@ -17,6 +17,16 @@ public class Employee {
 		// implement
 		boolean paid = false;
 		int index = -1;
+		
+		/*for(String s:salaryRecord.keySet()) {
+			if(s.equals(date)) {
+			System.out.println(firstName +" "+ lastName + "  was paid " + salaryRecord.get(s)+ "on "
+						+ s); //date
+			paid =true;
+			}
+		}*/
+			 
+		
 		for (int i = 0; i < salaryRecord.size(); i++) {
 			if (salaryRecord.keySet().toArray()[i].equals(date)) {
 				paid = true;

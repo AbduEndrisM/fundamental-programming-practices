@@ -1,6 +1,6 @@
-package exams.Jan2017.Problem.prob2.incorrect;
+package exams.Jan2017.prob2.solution;
 
-public final class SavingsAccount {
+public final class SavingsAccount extends Account{
 	public SavingsAccount(double balance, double interestRate) {
 		this.balance = balance;
 		this.interestRate = interestRate;

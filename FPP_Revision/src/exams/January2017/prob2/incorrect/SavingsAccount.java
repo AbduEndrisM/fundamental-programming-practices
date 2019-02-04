@@ -1,4 +1,4 @@
-package exams.Jan2017.Problem.prob2.solution;
+package exams.January2017.prob2.incorrect;
 
 public final class SavingsAccount {
 	public SavingsAccount(double balance, double interestRate) {

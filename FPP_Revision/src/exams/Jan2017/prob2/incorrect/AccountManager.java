@@ -1,4 +1,4 @@
-package exams.Jan2017.Problem.prob2.incorrect;
+package exams.Jan2017.prob2.incorrect;
 
 import java.util.List;
 

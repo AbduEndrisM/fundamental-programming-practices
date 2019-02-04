@@ -1,4 +1,4 @@
-package exams.Jan2017.Problem.prob1;
+package exams.January2017.prob1;
 
 @SuppressWarnings("serial")
 public class QueueException extends Exception {

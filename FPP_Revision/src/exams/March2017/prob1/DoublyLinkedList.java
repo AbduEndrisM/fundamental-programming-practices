@@ -1,33 +1,14 @@
-package exams.Mar2017.Solution.prob1;
+package exams.March2017.prob1;
 
- 
 public class DoublyLinkedList {
 	
 		Node header;
 		DoublyLinkedList(){
-			header = new Node();
+			header = new Node(null, null , null);
 		}
 		//adds to the end of the list
 		public void addLast(String item){
-			if (header.previous == null && header.next==null && header.value==null) {
-				Node temp = new Node();
-				temp.next = null;
-				temp.previous = null;
-				temp.value = item;
-				header = temp;
-			} else {
-				Node temp = header;
-				while (temp.next != null) {
-					temp = temp.next;
-				}
-				Node temp2 = new Node();
-				temp2.previous = temp;
-				temp2.next = null;
-				temp2.value = item;
-				temp.next = temp2;
-			}
-			
-			/*  //using Node constractor
+			//implement
 			Node temp = header.next;
 			if (temp==null) {
 				temp = new Node(header, item, null);
@@ -40,7 +21,9 @@ public class DoublyLinkedList {
 				}
 				Node temp2 = new Node(temp, item, null);
 				temp.next=temp2;
-			}*/
+			}
+
+			
 		}
 		@Override
 		public String toString() {
@@ -64,17 +47,21 @@ public class DoublyLinkedList {
 			public String toString() {
 				return value == null ? "null" : value;
 			}
+
+			public Node(Node previous, String value, Node next ) {
+				 
+				this.value = value;
+				this.next = next;
+				this.previous = previous;
+			}
+			
 		}
 	
 		public static void main(String[] args){
 			DoublyLinkedList list = new DoublyLinkedList();
-			System.out.println(list.header);
 			list.addLast("Bob");
-			System.out.println(list.header);
-			list.addLast("Bill");
-			list.addLast("Tom");
-			list.addLast("Carol");
-			System.out.println(list.header);
+			list.addLast("Harry");
+			list.addLast("Steve");
 			System.out.println(list);
 		}
 }

@@ -1,6 +1,6 @@
-package quiz.prob1_old;
+package quiz.prob1.prob1;
 
-class HatMaker  { 
+class HatMaker extends Figure { 
     
     public String getFigure() {
         return "/\\";

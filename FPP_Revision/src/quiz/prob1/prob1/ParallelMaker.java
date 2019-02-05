@@ -1,4 +1,4 @@
-package quiz.prob1_new;
+package quiz.prob1.prob1;
 
 class ParallelMaker extends Figure {
  

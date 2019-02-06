@@ -40,7 +40,7 @@ public class MyStringList  {
 	public boolean find(String s) {
 		// implemement
 
-		// using lambda
+		// using lambda stream
 		/*Optional<String> str = Stream
 				.of(strArray)
 				.filter(s1 -> s1.equals(s))

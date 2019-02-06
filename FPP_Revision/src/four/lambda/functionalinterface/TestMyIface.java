@@ -19,9 +19,13 @@ public class TestMyIface {
 			}
 		};
 	
-
 		System.out.println(obj.getNumber());
+		
+		MyIface obj2 = ()-> Math.random();
+		 
 	
+		System.out.println(obj2.getNumber());
+		
 	}
 
 

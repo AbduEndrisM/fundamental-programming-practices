@@ -24,8 +24,8 @@ public class RemoveDup {
 			hash.put(s, null);
 		}
 
-		String[] s = new String[hash.keySet().size()];
-				s=hash.keySet().toArray(new String[0]);
+		String[] s = hash.keySet().toArray(new String[0]);//new String[hash.keySet().size()]; // (String[]) hash.keySet().toArray() [0];
+				//s=hash.keySet().toArray(new String[0]);
 				return s;
 /*		for (int i = 0; i < hash.keySet().size(); i++) {
 			

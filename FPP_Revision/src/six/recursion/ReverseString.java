@@ -29,13 +29,22 @@ public class ReverseString {
 
 	private static String reverseStringUsingRecursion(String string) {
 		
-		if (string.length()==0)
+		if(string==null||string.length()==0) {
+			return string;
+		}
+		int n= string.length()-1;
+		
+	
+		
+		return string.charAt(n)+reverseStringUsingRecursion(string.substring(0, n));
+		
+		/*if (string.length()==0)
 			return string;
 		
 		int x =string.length()-1;
 				
 		
-		return string.charAt(x) + reverseStringUsingRecursion(string.substring(0, x));
+		return string.charAt(x) + reverseStringUsingRecursion(string.substring(0, x));*/
 		
 		
 	}

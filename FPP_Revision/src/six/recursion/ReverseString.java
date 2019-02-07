@@ -33,9 +33,11 @@ public class ReverseString {
 			return string;
 		}
 		int n= string.length()-1;
-		
+
+//		String n =""+string.charAt(0);
 	
-		
+//		return reverseStringUsingRecursion(string.substring(1))+n;
+			
 		return string.charAt(n)+reverseStringUsingRecursion(string.substring(0, n));
 		
 		/*if (string.length()==0)

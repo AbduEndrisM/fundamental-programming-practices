@@ -26,7 +26,7 @@ public class Prog1 {
 			if (x < 0 || x > 100)
 				throw new MyException();
 			System.out.println("x: "+x);
-		}
+		} 
 
 		catch (MyException e) {
 			// TODO: handle exception 

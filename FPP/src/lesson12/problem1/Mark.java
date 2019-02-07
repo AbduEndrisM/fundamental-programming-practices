@@ -13,5 +13,5 @@ public class Mark {
 			throw new InputMismatchException("your mark is out of thr range range");
 		System.out.println("your mark: " + mark);
 
-	}
+	} 
 }

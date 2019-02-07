@@ -6,7 +6,7 @@ public class CustomerAccount {
 	private String Cus_name;
 	private String Acc_No;
 	private double Balance;
-
+ 
 	CustomerAccount(String Cus_name, String Acc_No, double Balance) {
 		this.Cus_name = Cus_name;
 		this.Acc_No = Acc_No;

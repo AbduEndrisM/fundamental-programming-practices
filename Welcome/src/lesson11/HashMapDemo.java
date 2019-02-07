@@ -18,7 +18,7 @@ public class HashMapDemo {
 		productMap.put(null, null);
 		System.out.println(productMap);
 		
-		HashSet<String> stateSet = new HashSet<String>();
+		HashSet< String> stateSet = new HashSet<String>();
 		stateSet.add ("CA");
 		stateSet.add ("WI");
 		stateSet.add ("NY");

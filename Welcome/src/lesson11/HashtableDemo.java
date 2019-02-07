@@ -9,7 +9,7 @@ public class HashtableDemo {
         //adding or set items in Hashtable by put method key and value pair
         hTable.put(1, "Java");
         hTable.put(5, "C++");
-        hTable.put(3, "CoralDraw");
+        hTable.put(3, "WAPi");
         hTable.put(4, "SE");
       //  hTable.put(3, "Abdu");
          System.out.println(hTable);

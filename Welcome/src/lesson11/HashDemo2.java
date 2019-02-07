@@ -12,7 +12,7 @@ public class HashDemo2 {
 	        hm.put("first", "FIRST INSERTED");
 	        hm.put("second", "SECOND INSERTED");
 	        hm.put("third","THIRD INSERTED");
-	        // hm.put(null,null); Throw run time error - NullPointer Exception
+	          // hm.put(null,null); Throw run time error - NullPointer Exception
 	       Iterator it = (Iterator) hm.keys();
 	        System.out.println("My Hashtable content:");
 	        System.out.println(hm); // Display the contents by key wise reverse order

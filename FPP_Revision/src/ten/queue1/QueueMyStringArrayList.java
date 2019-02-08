@@ -41,15 +41,12 @@ public class QueueMyStringArrayList implements MyStringQueue {
 	/** Iqueueert: adds an element to the rear/end of the queue. */
 	public void enqueue(String string) {
 		// implement
-		if (rear == arr.length)
+		if (isFull())//(rear == arr.length)
 			resize();
-		if ((rear == 0) && (front == -1)) {
+		if (front == -1) {
 			arr[rear++] = string;
-
 			front++;
-
 		}
-
 		else {
 			arr[rear++] = string;
 

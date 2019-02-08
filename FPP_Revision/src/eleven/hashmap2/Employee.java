@@ -18,16 +18,19 @@ public class Employee {
 		boolean paid = false;
 		int index = -1;
 		
-		/*for(String s:salaryRecord.keySet()) {
+		 for(String s:salaryRecord.keySet()) {
 			if(s.equals(date)) {
 			System.out.println(firstName +" "+ lastName + "  was paid " + salaryRecord.get(s)+ "on "
 						+ s); //date
 			paid =true;
 			}
-		}*/
-			 
+		} 
+		if(paid==false) {
+			System.out.println(firstName +" "+ lastName + "  Not paid " + "on "	+ date); //date
+	
+		}
 		
-		for (int i = 0; i < salaryRecord.size(); i++) {
+		/*for (int i = 0; i < salaryRecord.size(); i++) {
 			if (salaryRecord.keySet().toArray()[i].equals(date)) {
 				paid = true;
 				index = i;
@@ -40,7 +43,7 @@ public class Employee {
 
 		else
 			System.out.println(firstName +" "+ lastName + "  did not receive a paycheck on "+date);
-
+*/
 	}
 
 	public void printAveragePaycheck() {

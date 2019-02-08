@@ -12,9 +12,11 @@ public class HashtableDemo3 {
 	        System.out.println("Hashtable entries:");
 	      
 	        Set<Integer> keys = tm.keySet();
-	        System.out.println(tm.get(5));
-	        for(Integer key:keys){
-	        //    System.out.println(key+" ==> "+tm.get(key));
+	        System.out.println(keys);
+	        System.out.println(tm.get(5).getName() + ": "+tm.get(5).getSalary());
+	        
+	        for(int key:keys){
+	        //   System.out.println(key+" ==> "+tm.get(key));
 	        }
       
 		 
@@ -28,7 +30,7 @@ public class HashtableDemo3 {
 		        
 		        Set<String> keys2 = tm2.keySet();
 		        for(String key:keys2){
-		           // System.out.println(key+" ==> "+tm2.get(key));
+		            System.out.println(key+" ==> "+tm2.get(key).getSalary());
 		        }
 		     
 	}
@@ -45,7 +47,19 @@ class Empl{
         this.name = n;
         this.salary = s;
     }
-    public String toString() {
+    public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	public String toString() {
     	return id + "\n" + name + "\n" + salary + "\n"; 
      	}
 }

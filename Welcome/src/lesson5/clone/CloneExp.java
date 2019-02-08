@@ -57,12 +57,13 @@ public class CloneExp implements Cloneable
 		  this.address = add;
 		  
 	  }
+		  @Override
 	  public String toString()
 	  {
-		  String ot = this.name + "\n I am Living in  " + address.houseNo + " " + address.address1 + " " + address.address2 + " " + address.zipcode;
+		  String ot = this.name + " -->  I am Living in  " + address.houseNo + " " + address.address1 + " " + address.address2 + " " + address.zipcode;
 	      return ot; 
 	  }
-
+	  @Override
 	  public Object clone() throws CloneNotSupportedException {
 
 	    CloneExp clone=(CloneExp)super.clone();
@@ -76,7 +77,7 @@ public class CloneExp implements Cloneable
 		
 	    // Shallow copy of Cloning assign the objects instance references 
 	      
-	      CloneExp addObj = new CloneExp("Renuka", new Address("Apt. 1", "Utopia Park","West Avenue",52556));
+	      CloneExp addObj = new CloneExp("Abdu", new Address("Apt. 1", "Utopia Park","West Avenue",12345));
 	      
 	      System.out.println("Before Cloning");
 	      System.out.println(addObj);
@@ -88,6 +89,7 @@ public class CloneExp implements Cloneable
 	     addObj.address.setHouseNo("11A");
 	     System.out.println("After Modifing the House No.");
 	     System.out.println(cloAdd);
+	     System.out.println(addObj);
 	         	       
 	     	     
 		}

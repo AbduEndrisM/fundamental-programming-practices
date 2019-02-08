@@ -9,21 +9,39 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import seven.innerclass.Top;
+
 public class TopCityUtility {
    /* this method takes the first argument as Hashtable with Country name as key and its top cities as values.
     * Second argument is List of Cities as String.
     * This method need to return the list of top cities which match with the cities in the Hash Table
     */
 	
+	@SuppressWarnings("unlikely-arg-type")
 	public static List<TopCity> CityPopulation(Hashtable<String, List<TopCity>> table, List<String> list) {
 		//IMPLEMENT
 		List<TopCity> temp = new ArrayList<>();
 	//	List<Double> pop = new ArrayList<>();
 		Set<String> keys = table.keySet();
-		List<TopCity> tc = new ArrayList();
-		for(String key:keys){
-			tc.addAll(table.get(key));
+		List<TopCity> tc = new ArrayList<TopCity>();
+		for(String s:keys){
+			 
+			tc.addAll(table.get(s));
+			/*if(list.contains(table.get(key).get(0))){
+				temp.add(table.get(key).get(0));
+			}*/
 			}
+		
+		Iterator< TopCity> i = tc.iterator();
+		while(i.hasNext()) {
+			TopCity t = i.next();
+			if(list.contains(t.getCname())){
+				temp.add(t);
+			}
+		}
+		
+		
+		/*
 			for(String x:list){
         	   Iterator<TopCity> it = tc.iterator();
         	   while(it.hasNext()){
@@ -31,11 +49,13 @@ public class TopCityUtility {
         		   if(x.equals(y.getCname())){
         			   temp.add(y);
         		//	   pop.add(y.getPop());
-        		   }
-        			   
+        		  
+        		   }   
         	   }
+			}*/
+        		   
  
-           }
+           
    		return temp;
 	}	
 	

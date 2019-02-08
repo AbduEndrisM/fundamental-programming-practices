@@ -7,7 +7,7 @@ public class Tests {
 public static void main(String[] args) {
 	
 	LocalDateTime lc = LocalDateTime.now();
-	System.out.println(lc);
+//	System.out.println(lc);
 	
 	String x="Abdu";
 	String a="Abdu";

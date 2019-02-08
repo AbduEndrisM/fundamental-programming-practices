@@ -19,20 +19,8 @@ public class UserException {
 	public static void main(String[] args) throws Throwable {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
-			System.out.print("Enter user name : ");
-			String n = br.readLine();
-			System.out.print("Enter your password : ");
-			String m = br.readLine();
+			throw new NullPointerException();
 
-			if (m.length() < 6)
-				throw new NoSuchElementException();
-
-			if (m.length() < 6)
-			//	throw new myException();
-			System.out.print("Enterd your age : ");
-			int o = Integer.parseInt(br.readLine());
-			if (o < 18)
-				throw new myException(o);
 		} catch (Exception e) {
 		} finally {
 			System.out.println("End");

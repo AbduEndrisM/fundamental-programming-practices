@@ -25,7 +25,7 @@ public class DoublyLinkedDeleteFirst {
 				throw new  IllegalStateException();
 			else {
 				temp.next=temp2.next;
-			
+			if(temp2.next!=null)
 				temp2.next.previous=temp.next;
 				
 			}
@@ -90,9 +90,7 @@ public class DoublyLinkedDeleteFirst {
 		list.addLast("Bob");
 		list.addLast("Abdu");
 		list.addLast("Tom");
-		list.addLast("Bill");
-		list.addLast("Ethio");
-		list.addLast("Tom");
+		  
 		String deleted = list.deleteFirst();
 		System.out.println("This item was deleted: " + deleted);
 		System.out.println(list);

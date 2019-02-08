@@ -33,9 +33,11 @@ public class LinkedListQueueImpl {
 		return arr.size();
 	}
 
+	 
+
 	@Override
 	public String toString() {
-		return "LinkedListStackImpl [arr=" + arr + "]";
+		return "LinkedListQueueImpl [arr=" + arr + "]";
 	}
 
 	public static void main(String[] args) {

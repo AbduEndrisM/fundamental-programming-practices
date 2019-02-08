@@ -5,7 +5,7 @@ public class Array {
 
 	
 	public static void main(String[] args) {
-		ArrayList al = new ArrayList();
+		ArrayList<Object> al = new ArrayList<>();
 	      System.out.println("Initial size of al: " + al.size());
 	      // add elements to the array list
 	      al.add("C");

@@ -1,7 +1,7 @@
 package ten.queue2;
 
 import java.util.LinkedList;
- 
+
 /**
  * For this problem, you will implement a queue of String,
  *
@@ -14,13 +14,14 @@ public class QueueMyStringLinkedList {
 	Node header;
 	Node front;
 	Node rear;
-int size;
+	int size;
+
 	public QueueMyStringLinkedList() {
 		// TODO Auto-generated constructor stub
 //		header = new Node();
 		rear = null;
 		front = null;
-		size=0;
+		size = 0;
 	}
 
 	public String peek() {
@@ -29,21 +30,20 @@ int size;
 
 	public void push(String obj) {
 
-		if(isEmpty()) {
-		rear = new Node();	
-		rear.next=null;
-		rear.previous=null;
-		rear.value=obj;
-		front = rear;
-		size++;
-		}
-		else {
+		if (isEmpty()) {
+			rear = new Node();
+			rear.next = null;
+			rear.previous = null;
+			rear.value = obj;
+			front = rear;
+			size++;
+		} else {
 			Node temp = rear;
 			rear = new Node();
-			rear.next=null;
-			rear.previous=temp;
-			rear.value=obj;
-			temp.next=rear;
+			rear.next = null;
+			rear.previous = temp;
+			rear.value = obj;
+			temp.next = rear;
 		}
 	}
 
@@ -61,13 +61,13 @@ int size;
 
 	@Override
 	public String toString() {
-		String s="";
+		String s = "";
 		Node temp = front;
-    	while(temp != null){
-    		s += temp.value + " ,";
-    		temp = temp.next;
-    	}
-    	return s;
+		while (temp != null) {
+			s += temp.value + " ,";
+			temp = temp.next;
+		}
+		return s;
 	}
 
 	class Node {

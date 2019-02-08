@@ -7,8 +7,14 @@ import java.util.List;
 public class Admin {
 	public static List<Student>/*<implement>*/ convertArray(Student[] studentArray) {
 		/* implement */
-		List<Student>list = new ArrayList<>();
+		/*List<Student>list = new ArrayList<>();
 		list.addAll( Arrays.asList(studentArray));
+		*/
+		List<Student>list = Arrays.asList(studentArray);
+		/*for(Student s:studentArray) {
+			list.add(s);
+		}
+		*/
 		return list;
 	}
 	

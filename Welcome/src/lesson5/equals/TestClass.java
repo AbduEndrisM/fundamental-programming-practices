@@ -16,7 +16,7 @@ public class TestClass {
 		
 		 int xxx= 2;
 		Test t = new Test();
-	t.myMethod(8);
+	//t.myMethod(8);
 		
 		
 

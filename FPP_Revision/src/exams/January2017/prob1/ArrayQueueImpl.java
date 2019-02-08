@@ -60,6 +60,8 @@ public class ArrayQueueImpl {
 
 	public int size() {
 		// implement
+		if (isEmpty())
+			return 0;
 		return rear - front;
 	}
 

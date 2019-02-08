@@ -13,10 +13,10 @@ public class AccountManager {
 			}
 		}
 
-		return sum;
 		
 		
-		/*double sum2 = 0.0;
+		
+	/*	double sum2 = 0.0;
 		List<Account> list = new ArrayList<>();
 		
 		
@@ -24,9 +24,9 @@ public class AccountManager {
 			list.addAll(em.getAccounts());
 		}
 		for(Account l:list) {
-			sum=sum+l.getBalance();
-		}
-		*/
+			sum2=sum2+l.getBalance();
+		}*/
 		
+		return sum;
 	}
 }

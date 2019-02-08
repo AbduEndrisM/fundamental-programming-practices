@@ -8,8 +8,9 @@ public class Main {
 		for(int i = 0; i < 15; i ++)
 			q.enqueue(i);
 		System.out.println(q.isFull());
-		for(int i = 0; i < 14; i++)
-			
+		for(int i = 0; i < 14; i++) {
+		System.out.println(q.get());
+		}
 			 q.dequeue();
 		System.out.println(q.size());
 		 

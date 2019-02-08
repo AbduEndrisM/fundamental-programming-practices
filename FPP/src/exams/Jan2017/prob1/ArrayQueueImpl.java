@@ -27,7 +27,7 @@ public class ArrayQueueImpl {
 			}
 				
 				
-			arr[front] = obj;
+			arr[rear] = obj;
 			rear++;
 			 
 		 
@@ -63,6 +63,15 @@ public class ArrayQueueImpl {
 			return 0;
 		return rear-front;
 	}
+	
+	public int get() {
+		// implement
+		if (front==-1)
+			return 0;
+		return arr[front];
+	}
+	
+	
 
 	public void resize() {
 

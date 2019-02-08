@@ -12,8 +12,8 @@ public class CountDuplicate {
 
 		Stack <Employee> emp = new Stack<>();
 		
-		emp.push(new Employee("abduA", "edris", 1111));
-		emp.push(new Employee("abduB", "edris", 2222));
+//		emp.push(new Employee("abduA", "edris", 1111));
+//		emp.push(new Employee("abduB", "edris", 2222));
 		emp.push(new Employee("abduC", "edrisM", 3333));
 		emp.push(new Employee("abduD", "edris", 444));
 		emp.push(new Employee("abduC", "edrisM", 3333));
@@ -25,8 +25,9 @@ public class CountDuplicate {
 		
 		HashMap <String, Integer> table = new HashMap<>();
 		  
-		int count =0;
+		
 		for(Employee e:emp) {
+			int count =0;
 			if(table.keySet().contains(e.lName)) {
 				count++;
 			table.put(e.lName, table.get(e.lName)+1);

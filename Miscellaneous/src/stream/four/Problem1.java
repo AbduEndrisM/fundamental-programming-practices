@@ -11,11 +11,12 @@ public class Problem1 {
 	// Hint: use concat
 	public static List<String> elementsInJustOne(List<String> list1, List<String> list2) {
 		// implement
-		 List<String>list = Stream.concat(list1.stream(),list2.stream())
-				 			.distinct()
-				 			.collect(Collectors.toList());
+		 List<String>list = Stream.concat(list1.stream()
+				 .filter(x->list2.contains(x)==false), 	list2.stream()
+				 .filter(x->list1.contains(x)==false))
+				 .collect(Collectors.toList());
 
-				 
+	 
 		return list;
 
 	}
@@ -24,7 +25,12 @@ public class Problem1 {
 	// list who live in Fairfield
 	public static List<String> getAllFairfieldCustomers(List<Customer> list) {
 		// implement
-		return null;
+		 List<String>listFairfield = list.stream()
+				 			.filter(x->x.getCity().equals("Fairfield"))
+				 			.map(x->x.getName())
+				 			.collect(Collectors.toList());
+					
+		return listFairfield;
 	}
 
 	// test methods

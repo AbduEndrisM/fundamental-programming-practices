@@ -1,33 +1,40 @@
 package interview;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*Quora is looking for bug-free programmers. The two questions are about string permutation
 and "football problem". 
 Entry level problems but I didn't fix all the errors during the given time.  
 *
 */
 
-// started 1:40 - 3:05 done  1:30 hour too bad!!!
+// started 1:40 -  not done
 public class SiftwareeEngQoura {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String football = "aaa";
+		String football = "aaabcb";
 //		ybghjhbuytb
 		char[] a = football.toCharArray();
 		int factOfLength = fact(a.length);
 		int permut=1;
-		
-		for(int i=0; i<a.length-1; i++) {
+		List<Character> x  =new ArrayList<>(); 
+		for(int i=0; i<a.length; i++) {
+			if (x.contains(a[i])) {
+				break;
+			}
 			int count=1;
 			for (int j=i+1; j<a.length;j++) {
 				if (a[i]==a[j]) { 
 					count++;
-					a[j]=' ';
+				 x.add(a[i]);
 				}
 		}
+			System.out.println(x);
 		permut *= fact(count);
-		System.out.println(permut);
+//		System.out.println(permut);
 	}
 		//System.out.println(factOfLength/permut);
 	}

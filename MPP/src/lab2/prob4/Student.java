@@ -1,9 +1,7 @@
 package lab2.prob4;
 
 import java.util.*;
-
-import javax.swing.text.html.parser.Entity;
-
+ 
 public class Student {
 	  String name;
 	  String id;

@@ -5,9 +5,9 @@ class TranscriptEntry {
 	Section section;
 	String grade;
 
-	public  TranscriptEntry(Student s, Section sect, String grade) {
-		student = s;
-		section =sect;
+	public  TranscriptEntry(Student student, Section section, String grade) {
+		this.student = student;
+		this.section =section;
 		this.grade = grade;
 		
 		 

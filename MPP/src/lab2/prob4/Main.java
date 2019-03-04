@@ -20,7 +20,7 @@ public class Main {
 		System.out.println(m.getTranscript(m.bob));
 		System.out.println("Grades for math section:\n " + m.getGrades(m.math));
 		System.out.println("Courses that Tim took: " + m.getCourseNames(m.tim));
-//		System.out.println("Students who got A's: " + m.getStudentsWith("A"));
+		System.out.println("Students who got A's: " + m.getStudentsWith("A"));
 	}
 	
 	private Transcript getTranscript(Student s) {
@@ -81,28 +81,7 @@ public class Main {
 					factory.newTranscriptEntry(bob, bio1, "A"), factory.newTranscriptEntry(bob, bio1, "A")};
 */
 
-		
-//		entries[1].student = bob;
-//		entries[1].section = math;
-//		entries[1].grade = "B";
-//		
-//		entries[2].student = tim;
-//		entries[2].section = bio1;
-//		entries[2].grade = "B+";
-//		
-//		entries[3].student = tim;
-//		entries[3].section = math;
-//		entries[3].grade = "A-";
-//		
-//		entries[4].student = allen;
-//		entries[4].section = math;
-//		entries[4].grade = "B";
-//		
-//		entries[5].student = allen;
-//		entries[5].section = bio2;
-//		entries[5].grade = "B+";
-
-		//insert entries into sections
+			//insert entries into sections
 		List<TranscriptEntry> gradesForBio1 = new ArrayList<>();
 		gradesForBio1.add(entries[0]);
 		gradesForBio1.add(entries[2]);

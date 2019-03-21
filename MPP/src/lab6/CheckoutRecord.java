@@ -5,18 +5,19 @@ import java.util.List;
 
 public class CheckoutRecord {
 
-	CheckoutRecordEntry checkOutRecordEntry;
-	public List<CheckoutRecordEntry> list = new ArrayList<>();
+//  LiCheckoutRecordEntry checkOutRecordEntry;
+	private List<CheckoutRecordEntry> list = new ArrayList<>();
+	
+	
 	
 	public List<CheckoutRecordEntry> getCheckoutEntryList() {
 	
-		
 		return list;
 		
 	}
 	
 	public void addCheckoutEntry(CheckoutRecordEntry entry) {
-		this.checkOutRecordEntry = entry;
+		list.add(entry);
 	}
 	
 }

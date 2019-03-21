@@ -11,6 +11,8 @@ public class LendingItem {
 	public void setNumCopiesInLib(int numCopiesInLib) {
 		this.numCopiesInLib = numCopiesInLib;
 	}
+	
+	
 
 
 	

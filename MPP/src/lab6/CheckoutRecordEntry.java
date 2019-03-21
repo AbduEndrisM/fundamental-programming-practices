@@ -7,8 +7,9 @@ public class CheckoutRecordEntry {
 	private LocalDate checkoutDate;
 	private LocalDate dueDate;
 	
-	LendingItem lItem = new LendingItem();
+	private LendingItem lItem ;
 
+	private ItemType lendingItemType;
 	public LocalDate getCheckoutDate() {
 		return checkoutDate;
 	}
@@ -17,11 +18,11 @@ public class CheckoutRecordEntry {
 		return dueDate;
 	}
 
-	public LendingItem getlItem() {
+	public LendingItem getLendingItem() {
 		return lItem;
 	}
-	public ItemType getLendingItem() {
-		return null;
+	public ItemType getLendingItemType() {
+		return lendingItemType;
 		
 	}
 
@@ -30,7 +31,32 @@ public class CheckoutRecordEntry {
 		this.checkoutDate = checkoutDate;
 		this.dueDate = dueDate;
 		this.lItem = lItem;
+		this.lendingItemType=type;
 	}
+
+/*	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((lendingItemType == null) ? 0 : lendingItemType.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CheckoutRecordEntry other = (CheckoutRecordEntry) obj;
+		if (lendingItemType != other.lendingItemType)
+			return false;
+		return true;
+	}
+	*/
+	
 	
 	
 	
